@@ -1,17 +1,32 @@
 <html>
-<head>
-<h1> JavaScript Print Statement With Sum of 2 Variables</h1>
-<p id="demo"></p>
-</head>
-<body>
+  <head>
+    <h1>JavaScript Print Statement With Sum of 2 Variables</h1>
+    <p id="demo"></p>
+    <h1>Substraction</h1>
+    <p id="demo2"></p>
+    <h1>Division</h1>
+    <p id="demo3"></p>
+    <h1>Multiplication</h1>
+    <p id="demo4"></p>
+  </head>
+  <body>
     <script>
-        let x = 10;
-        let y = 20;
-        let z = x+y;
-        document.getElementById("demo").innerHTML = "The sum of X and Y is " + z;
+      let x = 10;
+      let y = 20;
+      let z = x + y;
+      let zz = x - y;
+      let divide = x / y;
+      let multiply = x * y;
 
-        
+      document.getElementById("demo").innerHTML =
+        "The Subbstraction of X and Y is " + z;
+
+      document.getElementById("demo2").innerHTML =
+        "The Subbstraction of X and Y is " + zz;
+      document.getElementById("demo3").innerHTML =
+        "The Division of X / Y is " + divide;
+      document.getElementById("demo4").innerHTML =
+        "The Multiply of X * Y is " + multiply;
     </script>
-</body>
-
+  </body>
 </html>
