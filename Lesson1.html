@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
     <head>
         <h1>JavaScroipt Assignment Operators</h1>
     </head>
@@ -42,7 +42,6 @@
     </body>
 </html>
 
-<!--  -->
 
 <html>
     <head>
@@ -66,7 +65,6 @@
     </body>
 </html>
 
-<!--  -->
 
 <html>
     <head>
@@ -89,7 +87,6 @@
         </script>
     </body>
 </html>
-<!--  -->
 
 <html>
     <head>
@@ -112,3 +109,93 @@
         </script>
     </body>
 </html>
+
+
+  -->
+
+<html>
+  <head>
+    <body>
+      <h1>JavaScript Assignments</h1>
+      <h2>Logical AND Assignment</h2>
+      <h3>The &&= Operator</h3>
+
+      <p>If the first value is true, the second value is assigned.</p>
+
+      <p id="demo"></p>
+    </body>
+    <script>
+      let xx = true;
+      let yy = (xx &&= 20);
+
+      document.getElementById("demo").innerHTML = " The Value of Y is " + yy;
+    </script>
+  </head>
+</html>
+
+<html>
+  <body>
+    <h1>JavaScript Assignments</h1>
+    <h2>Logical OR Assignment</h2>
+    <h3>The ||= Operator</h3>
+
+    <p>If the first value is false, the second value is assigned:</p>
+
+    <p id="demo1"></p>
+
+    <script>
+      let x = false;
+      let y = (x ||= 40);
+
+      document.getElementById("demo1").innerHTML = "The Value of Y is " + y;
+    </script>
+  </body>
+</html>
+
+
+<!--  -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Assignments</h1>
+<h2>The Nullish Operator</h2>
+<h3>The ??= Operator</h3>
+
+<p>If the first value is undefined or null, the second value is assigned.</p>
+
+<p id="demo3"></p>
+
+<script>
+let e;
+e ??= 10;
+
+document.getElementById("demo3").innerHTML = "x is: " + e; 
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Assignments</h1>
+<h2>The Spread Operator</h2>
+<h3>The ... Operator</h3>
+
+<p id="demo4"></p>
+
+<script>
+let text = "12345";
+let min = Math.min(...text);
+let max = Math.max(...text);
+
+document.getElementById("demo4").innerHTML =
+"Minimum is: " + min + "<br>Maximum is: " + max;
+</script>
+
+</body>
+</html>
+
