@@ -1,12 +1,11 @@
 <html>
   <head>
     <style>
-        body{
-          background-color: lightblue;
-
-        }
+       
       div {
         text-align: center;
+            border: 1px solid gray;
+  padding: 8px;
       }
       h1 {
   text-align: center;
@@ -46,7 +45,96 @@ p {
       ternary (? :) <br />
     </p>
 
-    <script></script>
+    <script>
+
+
+    </script>
   </body>
    </div>
+</html>
+
+
+
+<html>
+    <body>
+        <h1>If - Else Condition</h1>
+        <h3>Age of Person is 18</h3>
+        <br>
+        <p id="demo1"></p>
+
+        <script>
+            let age = 18;
+            let text = "";
+            if(age >= 18){
+                text = "You Can Drive..!"
+            } else {
+                text = "You cant Drive.."
+            }
+            document.getElementById("demo1").innerHTML = text;
+        </script>
+    </body>
+
+</html>
+
+<!--  -->
+
+<html>
+<body>
+    <h1>The Conditional (Ternary) Operator</h1>
+    <h2>Syntax: <br>(condition) ? expression1 : expression2</h2>
+
+<p id="demo2"></p>
+
+<script>
+    let value  = 20;
+    let final_text = (value > 18) ? "Adult" : "Minor";
+
+    document.getElementById("demo2").innerHTML = final_text;
+</script>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Control Flow</h1>
+<h2>The switch Statement</h2>
+
+<p id="demo3"></p>
+
+<script>
+let day;
+let date = new Date().getDay();
+ 
+switch (date) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+
+document.getElementById("demo3").innerHTML = "Today is " + day;
+</script>
+
+</body>
 </html>
