@@ -1,12 +1,26 @@
 <html>
-    <head>
-        <style>
+  <head>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Loops</h1>
+    <h3>Loops are the ways to iterate the Programm</h3>
+    <h2>The for Loop</h2>
+    <!-- <br /> -->
+    <p id="demo"></p>
 
-        </style>
-    </head>
-<body>
-<h1> JavaScript Loops </h1>
-<h3>Loops are the ways to iterate the Programm</h3>
-</body>
-
+    <!-- <br> -->
+    <script>
+      const number = [1, 2, 3, 4, 5];
+      let value = "";
+      for (let i = 0; i < number.length; i++) {
+        value += number[i] + "<br>";
+      }
+      document.getElementById("demo").innerHTML = value;
+    </script>
+  </body>
 </html>
