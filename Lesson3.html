@@ -51,7 +51,7 @@
 </head>
 </html> 
 -->
-<html>
+<!-- <html>
 <head>
 <style>
     body{
@@ -78,4 +78,45 @@ document.getElementById("demo").innerHTML = sum;
 
 </body>
 
+</html> -->
+
+
+<html>
+  <head>
+    <style>
+      body{
+        text-align: center;
+        color: blue;
+        background-color:aliceblue;
+        border-width: 1;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Control Flow</h1>
+    <br>
+    <br>
+    <p>  let text = "Unknown";
+      let age = 17; 
+      if(age < 18){ 
+        text="Minor"; 
+      } else {
+        text="Adult";
+      }</p>
+      <br>
+          <p id="demo"></p>
+
+    <script>
+      let text = "Unknown";
+      let age = 17;
+      if(age < 18){
+        text="Minor";
+      } else {
+        text="Adult";
+      }
+      document.getElementById("demo").innerHTML = text;
+
+    </script>
+  </body>
 </html>
