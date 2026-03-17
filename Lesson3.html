@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
   <head>
     <style>
       body {
@@ -10,10 +10,10 @@
     <h1>JavaScript Loops</h1>
     <h3>Loops are the ways to iterate the Programm</h3>
     <h2>The for Loop</h2>
-    <!-- <br /> -->
+    <br /> 
     <p id="demo"></p>
 
-    <!-- <br> -->
+    <br> 
     <script>
       const number = [1, 2, 3, 4, 5];
       let value = "";
@@ -23,4 +23,59 @@
       document.getElementById("demo").innerHTML = value;
     </script>
   </body>
+</html>
+
+
+<html>
+
+<head>
+    <style>
+
+    </style>
+
+    <body>
+        <h1> JavaScript While Loop </h1>
+        <p id="demo1"></p>
+        <script>
+            let text = " ";
+            let i = 0;
+            while ( i <  10 ){
+                text+= "The Number is "+ i+ "<br>";
+                i++;
+            }
+            document.getElementById("demo1").innerHTML = text;
+
+
+        </script>
+    </body>
+</head>
+</html> 
+-->
+<html>
+<head>
+<style>
+    body{
+        text-align: center;
+    }
+</style>
+
+
+</head>
+<body>
+  <h1>Array Sum</h1>
+  <p id="demo"></p>
+<script>
+const data = [1,2,3,4,5,6,7,8,9,10];
+
+let sum = 0 ;
+
+for ( let i = 0; i< data.length ; i++ ){
+    sum+= data[i];
+}
+
+document.getElementById("demo").innerHTML = sum;
+</script>
+
+</body>
+
 </html>
