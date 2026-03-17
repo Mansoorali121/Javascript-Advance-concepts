@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <style>
+      body {
+        color: white;
+        background-color: tomato;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>
+      Strings are for storing text <br />
+
+      Strings are written with quotes
+      <br />
+      <h1>Template Strings</h1>
+      <h3>Templates were introduced with ES6 (JavaScript 2016).</h3>
+
+      <h3>
+        Templates are strings enclosed in backticks (`This is a template
+        string`).
+      </h3>
+      <h3>Templates allow single and double quotes inside a string:</h3>
+      <p id="demo"></p>
+      <br />
+      <p id="demo2"></p>
+      <br />
+      <p id="demo3"></p>
+    </h2>
+    <script>
+      let text = "Hello i am JavaScript text";
+      let text2 = ` Hello i m an Tempelate String  `;
+      //  Finding String Length
+      let text_length = text2.length;
+      document.getElementById("demo").innerHTML = text;
+      document.getElementById("demo2").innerHTML = text2;
+
+      document.getElementById("demo3").innerHTML =
+        "The length of Tempelate text is " + text_length;
+    </script>
+  </body>
+</html>
