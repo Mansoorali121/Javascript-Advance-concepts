@@ -117,9 +117,63 @@ Template Strings is an ES6 feature.
 <html>
   <body>
     <h1>JavaScript String Methods</h1>
+    <h3>String Length Method</h3>
     <p>
-      Javascript strings are primitive and immutable: All string <br> methods produce
-      a new string without altering the original string.
+      Javascript strings are primitive and immutable: All string <br />
+      methods produce a new string without altering the original string.
     </p>
+    <p id="demo"></p>
+    <script>
+      let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      let textlength = text.length;
+      document.getElementById("demo").innerHTML = textlength;
+    </script>
   </body>
+</html>
+
+<html>
+  <body>
+    <h1>Extracting String Characters</h1>
+    <h3>There are 4 methods for extracting string characters:</h3>
+    <h4>
+      The at(position) Method <br />
+      The charAt(position) Method <br />
+      The charCodeAt(position) Method <br />
+      Using property access [] like in arrays
+    </h4>
+    <h5>JavaScript String charAt()</h5>
+    <p>
+      The charAt() method returns the character at a specified index (position)
+      in a string:
+    </p>
+    <p id="demo1"></p>
+    <script>
+
+      let textt = "Mansoor";
+      let value_text = textt.charAt(0);
+      document.getElementById("demo1").innerHTML = value_text;
+    </script>
+  </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The at() Method</h2>
+
+<p>The at() method returns an indexed element from a string:</p>
+
+<p id="demo3"></p>
+
+<script>
+const name = "W3Schools";
+let letter = name.at(2);
+
+document.getElementById("demo3").innerHTML = letter;
+</script>
+
+</body>
 </html>
