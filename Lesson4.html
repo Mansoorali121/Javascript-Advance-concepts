@@ -64,3 +64,49 @@
 </body>
 
 </html>
+
+<html>
+  <body>
+    <h1>Multiline Strings
+</h1>
+<p>Template Strings allow multiline strings:
+
+</p>
+<br>
+<p id="demo5"></p>
+
+<script>
+  let str_text_value = `
+  Hello This is 
+  Multiline text value
+  in JavaScript String Tempelate`;
+
+  document.getElementById("demo5").innerHTML = str_text_value;
+</script>
+  </body>
+</html>
+
+
+<html>
+  <body>
+    <h1>Interpolation
+</h1>
+<h4>
+  Template Strings allow variables in strings.
+
+
+
+</h4>
+<h3>Template strings provide an easy way to interpolate variables in strings.
+
+</h3>
+<br>
+<p id="demo6"></p>
+<script>
+  let first_name = "Mansoor";
+  let last_name = "Ali";
+  let full_name = `Welcome ${first_name},${last_name}`;
+  document.getElementById("demo6").innerHTML = full_name;
+</script>
+  </body>
+</html>
