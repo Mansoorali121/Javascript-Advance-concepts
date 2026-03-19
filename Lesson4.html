@@ -148,7 +148,6 @@ Template Strings is an ES6 feature.
     </p>
     <p id="demo1"></p>
     <script>
-
       let textt = "Mansoor";
       let value_text = textt.charAt(0);
       document.getElementById("demo1").innerHTML = value_text;
@@ -156,43 +155,65 @@ Template Strings is an ES6 feature.
   </body>
 </html>
 
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<body>
+  <body>
+    <h1>JavaScript Strings</h1>
+    <h2>The at() Method</h2>
 
-<h1>JavaScript Strings</h1>
-<h2>The at() Method</h2>
+    <p>The at() method returns an indexed element from a string:</p>
 
-<p>The at() method returns an indexed element from a string:</p>
+    <p id="demo3"></p>
 
-<p id="demo3"></p>
+    <script>
+      const name = "W3Schools";
+      let letter = name.at(2);
 
-<script>
-const name = "W3Schools";
-let letter = name.at(2);
-
-document.getElementById("demo3").innerHTML = letter;
-</script>
-
-</body>
+      document.getElementById("demo3").innerHTML = letter;
+    </script>
+  </body>
 </html>
 
+<html>
+  <body>
+    <h1>JavaScript String</h1>
+    <h4>The concat() Method</h4>
+    <p>The concat() method joins two or more strings:</p>
+    <p id="demo4"></p>
+    <script>
+      let namee = "Mansoor";
+      let lastnamee = "Ali";
+      let full_name = namee.concat(" ", lastnamee);
+      document.getElementById("demo4").innerHTML = full_name;
+    </script>
+  </body>
+</html>
 
 <html>
+  <body>
+    <h1>
+      Converting to Upper and Lower Case
+      <h3>A string is converted to upper case with toUpperCase():</h3>
+      <h3>A string is converted to lower case with toLowerCase():</h3>
+    </h1>
+    <p id="demo5"></p>
+    <script>
+      let text1 = "Hello Goor Morning";
+      let text2 = text1.toUpperCase();
+      document.getElementById("demo5").innerHTML = text2;
+    </script>
+  </body>
+</html>
 
-<body>
-  <h1>JavaScript String
-</h1>
-<h4>The concat() Method</h4>
-<P>The concat() method joins two or more strings:</P>
-<p id="demo4"></p>
-<script>
-  let namee = "Mansoor";
-  let lastnamee = "Ali";
-  let full_name = namee.concat(" ",lastnamee);
-  document.getElementById("demo4").innerHTML = full_name;
-
-</script>
-</body>
+<html>
+  <body>
+    <h1>JavaScript LowerCase Method</h1>
+    <p>A string is converted to Lower case with tolowerCase():</p>
+    <p id="demo6"></p>
+    <script>
+      let textt1 = " HELLO EVERYONE THIS IS UPPER CASE FOR A WHILE";
+      let final_text = textt1.toLowerCase();
+      document.getElementById("demo6").innerHTML = final_text;
+    </script>
+  </body>
 </html>
