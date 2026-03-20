@@ -322,7 +322,70 @@ Template Strings is an ES6 feature.
     <script>
       let value = "Please locate where 'locate' occurs!";
       let finded_value = value.search("locate");
-      document.getElementById("demo6").innerHTML = "The Finded Value by search method is "+ finded_value;
+      document.getElementById("demo6").innerHTML =
+        "The Finded Value by search method is " + finded_value;
+    </script>
+  </body>
+</html>
+
+<htm>
+  <body>
+    <h1>JavaScript Strings</h1>
+    <h2>The includes() Method</h2>
+    <p>Check if a string includes "world"</p>
+    <p>This is an ES6 Feature</p>
+    <p>It is case Sensitive</p>
+    <p id="demo7"></p>
+
+    <script>
+      let given_value = "Hello this is the world where we live happily";
+      let word_finded = given_value.includes("world");
+      document.getElementById("demo7").innerHTML =
+        "Includes () Function is applied and value we find is  <br>" +
+        word_finded;
+    </script>
+  </body>
+</htm>
+
+<html>
+  <body>
+    <h1>JavaScript Strings</h1>
+    <h2>The startsWith() Method</h2>
+    <p>This is an ES6 Feature</p>
+
+    <p>Check if a string starts with "Hello":</p>
+    <p id="demo8"></p>
+    <script>
+      let start_text = "Hello this is the new world where we live happily";
+      let value_find = start_text.startsWith("Hello");
+      document.getElementById("demo8").innerHTML =
+        "The sentence starts with the word Hello so the value we finded is<br> <br> " +
+        value_find;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>JavaScript String endsWith()</h1>
+
+    <h4>
+      <p>This is an ES6 Feature</p>
+      <p>endsWith() is case sensitive.</p>
+
+      The endsWith() method returns true if a string ends with a specified
+      value.
+    </h4>
+    <h5>Otherwise it returns false:</h5>
+    <p>Check if a string Ends with "City:</p>
+    <p></p>
+    <p id="demo9"></p>
+    <script>
+      let end_with_text = "Hello This is main of the City";
+      let end_value_finded = end_with_text.endsWith("City");
+      document.getElementById("demo9").innerHTML =
+        "Our sentence ends with City so the answer is <br> <br>" +
+        end_value_finded;
     </script>
   </body>
 </html>
