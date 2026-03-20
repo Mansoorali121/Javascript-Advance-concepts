@@ -1,0 +1,56 @@
+<!-- <html>
+    <body>
+        <h1>JavaScript Functions</h1>
+        <button onclick="Helloworld()" >
+            Click to Show value
+
+        </button>
+        <p id="demo"> </p>
+
+
+        <script>
+            function Helloworld(){
+                document.getElementById("demo").innerHTML = "Hello i am a function "
+                
+            }
+        </script>
+    </body>
+
+
+</html>
+
+
+ -->
+
+<html>
+  <body>
+    <h1>JavaScript Functions</h1>
+    <h2>Return Statement</h2>
+    <p>A Function that returns the greeting: "Hello World":</p>
+    <p id="demo"></p>
+    <script>
+      function Sayhello() {
+        return "Hello World";
+      }
+      let greeting = Sayhello();
+      document.getElementById("demo").innerHTML =
+        "The function is executed and value is <br> <br> " + greeting;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>JavaScript Functions</h1>
+    <p>A function that multiplies two numbers.</p>
+    <p id="demo2"></p>
+    <script>
+      function Multiply(a, b) {
+        return a * b;
+      }
+      let result = Multiply(4, 4);
+      document.getElementById("demo2").innerHTML =
+        "The result of 4 * 4 is <br> <br>" + result;
+    </script>
+  </body>
+</html>
