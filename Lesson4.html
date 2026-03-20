@@ -272,18 +272,57 @@ Template Strings is an ES6 feature.
   <body>
     <h2>JavaScript String indexOf()</h2>
     <h6>
-      The indexOf() method returns the index (position) of the first occurrence <br>
+      The indexOf() method returns the index (position) of the first occurrence
+      <br />
       of a string in a string, or it returns -1 if the string is not found:
     </h6>
-    
-  <p id="demo2"></p>
-  <p id="demo3"></p>
-  <script>
-    let text = "Hello This is Mansoor ALi Sahito From Pakistan";
-    let getIndexof = text.indexOf("Mansoor");
-    let secondindex = text.indexOf("Hero");
-    document.getElementById("demo2").innerHTML = getIndexof;
-    document.getElementById("demo3").innerHTML ="Second value we want to find is not located so the answer is <br> <br>"+  secondindex;
-  </script>
+
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+      let text = "Hello This is Mansoor ALi Sahito From Pakistan";
+      let getIndexof = text.indexOf("Mansoor");
+      let secondindex = text.indexOf("Hero");
+      document.getElementById("demo2").innerHTML = getIndexof;
+      document.getElementById("demo3").innerHTML =
+        "Second value we want to find is not located so the answer is <br> <br>" +
+        secondindex;
+    </script>
+  </body>
+</html>
+
+<!doctype html>
+<html>
+  <body>
+    <h1>JavaScript Strings</h1>
+    <h2>The indexOf() Method</h2>
+
+    <p>Both indexOf() and lastIndexOf() return -1 if the text is not found:</p>
+    <p id="demo4"></p>
+
+    <script>
+      let textt = "Please locate where 'locate' occurs!";
+      let index = textt.lastIndexOf("Please");
+      document.getElementById("demo4").innerHTML = index;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>JavaScript Strings</h1>
+    <h2>The search() Method</h2>
+
+    <p>
+      The search() method returns the position of the first occurrence of a
+      string in a string.
+    </p>
+    <p>The position of the first occurrence of "locate" is:</p>
+    <p id="demo6"></p>
+    <script>
+      let value = "Please locate where 'locate' occurs!";
+      let finded_value = value.search("locate");
+      document.getElementById("demo6").innerHTML = "The Finded Value by search method is "+ finded_value;
+    </script>
   </body>
 </html>
