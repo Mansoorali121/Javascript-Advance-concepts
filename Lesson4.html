@@ -235,18 +235,18 @@ Template Strings is an ES6 feature.
   </body>
 </html> -->
 
-<html>
+<!-- <html>
   <head>
     <style>
       body {
         text-align: center;
-        background-color:rgba(red, green, blue, alpha);
+        background-color: rgba(red, green, blue, alpha);
         color: white;
       }
-      h1{
+      h1 {
         color: red;
       }
-      p{
+      p {
         color: tomato;
       }
     </style>
@@ -266,4 +266,24 @@ Template Strings is an ES6 feature.
   </head>
 
   <body></body>
+</html> -->
+
+<html>
+  <body>
+    <h2>JavaScript String indexOf()</h2>
+    <h6>
+      The indexOf() method returns the index (position) of the first occurrence <br>
+      of a string in a string, or it returns -1 if the string is not found:
+    </h6>
+    
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <script>
+    let text = "Hello This is Mansoor ALi Sahito From Pakistan";
+    let getIndexof = text.indexOf("Mansoor");
+    let secondindex = text.indexOf("Hero");
+    document.getElementById("demo2").innerHTML = getIndexof;
+    document.getElementById("demo3").innerHTML ="Second value we want to find is not located so the answer is <br> <br>"+  secondindex;
+  </script>
+  </body>
 </html>
