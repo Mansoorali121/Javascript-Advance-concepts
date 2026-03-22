@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
   <body>
     <h1>JavaScript Function Parameters</h1>
     <p>
@@ -20,15 +20,45 @@
 
 <html>
   <h1>JavaScript Single Parameter Function:</h1>
-  <p>Will Pass single Parameter :</p> 
-  <p>Parameters are the ones who are passed as variables</p> 
+  <p>Will Pass single Parameter :</p>
+  <p>Parameters are the ones who are passed as variables</p>
   <p>Arguements are the ones Passed as values to Parameters:</p>
   <p id="demo2"></p>
   <script>
-    function personName(name){
-        return name;
+    function personName(name) {
+      return "Hello "+  name;
     }
     let person_name = personName("Mansoor");
     document.getElementById("demo2").innerHTML = person_name;
   </script>
+</html>
+
+
+<html>
+    <body></body>
+</html> -->
+
+<html>
+  <body>
+    <h1>JavaScript Fuction Return:</h1>
+  <p>
+    Returning Values from Functions <br />
+    A function can return a value back to the code that called it.<br />
+
+    The return statement is used to send a value out of a function.
+  </p>
+  <h1>The Return Statement:</h1>
+  <p>
+    When a function reaches a return statement the function stops executing.
+    <br />
+    The value after the return keyword is back to the caller
+  </p>
+  <p id="demo"></p>
+  <script>
+    function myfunction (){
+        return "Return statement is executed:";
+    }
+    document.getElementById("demo").innerHTML = myfunction();
+  </script>
+  </body>
 </html>
