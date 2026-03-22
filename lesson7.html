@@ -1,6 +1,34 @@
 <html>
-    <body>
-        <h1>JavaScript Function Parameters
-</h1>
-    </body>
+  <body>
+    <h1>JavaScript Function Parameters</h1>
+    <p>
+      Parameters allow you to pass (send) values to a function. <br />
+
+      Parameters are listed inside the parentheses in the function definition.
+    </p>
+    <h3>Passed Multiple Arguements:</h3>
+    <p id="demo"></p>
+    <script>
+      function multiply(a, b) {
+        return a * b;
+      }
+      let value = multiply(3, 4);
+      document.getElementById("demo").innerHTML = value;
+    </script>
+  </body>
+</html>
+
+<html>
+  <h1>JavaScript Single Parameter Function:</h1>
+  <p>Will Pass single Parameter :</p> 
+  <p>Parameters are the ones who are passed as variables</p> 
+  <p>Arguements are the ones Passed as values to Parameters:</p>
+  <p id="demo2"></p>
+  <script>
+    function personName(name){
+        return name;
+    }
+    let person_name = personName("Mansoor");
+    document.getElementById("demo2").innerHTML = person_name;
+  </script>
 </html>
