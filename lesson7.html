@@ -63,25 +63,21 @@
   </body>
 </html> -->
 
-<html>
+<!-- <html>
   <body>
     <h1>JavaScript Return Values:</h1>
     <p>A function can return any type of value (not only numbers).</p>
     <p id="demo"></p>
 
     <script>
-        function name(firstName,lastName){
-            
-            return  firstName + " " + lastName;
-        }
-        let fullname = name("Mansoor","Ali");
-        document.getElementById("demo").innerHTML = fullname;
-
+      function name(firstName, lastName) {
+        return firstName + " " + lastName;
+      }
+      let fullname = name("Mansoor", "Ali");
+      document.getElementById("demo").innerHTML = fullname;
     </script>
   </body>
 </html>
-
-
 
 <html>
   <body>
@@ -90,13 +86,44 @@
     <p id="demo2"></p>
 
     <script>
-        function calculate(a,b){
-            
-            return  a + b ;
-        }
-        let value = calculate(5,5);
-        document.getElementById("demo2").innerHTML = value;
-
+      function calculate(a, b) {
+        return a + b;
+      }
+      let value = calculate(5, 5);
+      document.getElementById("demo2").innerHTML = value;
     </script>
   </body>
+</html>
+
+<html>
+  <body>
+    <h1>Returning Values Early</h1>
+    <p>You can use return to stop a function early, based on a condition.</p>
+    <p id="demo3"></p>
+    <script>
+      function checkage(age) {
+        if (age < 18) {
+          return "Too Young";
+        }
+        return "Acccess Granted";
+      }
+      let age_checked = checkage(20);
+      document.getElementById("demo3").innerHTML = age_checked;
+    </script>
+  </body>
+</html>
+
+ -->
+
+<html>
+  <h1>JavaScript Function Expressions</h1>
+  <p>A function expression is a function stored in a variable.</p>
+  <p id="demo"></p>
+  <script>
+    function expressionfunction(){
+        return "Hello i am An function with expression";
+    }
+    let expression_value = expressionfunction();
+    document.getElementById("demo").innerHTML = expression_value;
+  </script>
 </html>
