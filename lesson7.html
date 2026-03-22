@@ -38,7 +38,7 @@
     <body></body>
 </html> -->
 
-<html>
+<!-- <html>
   <body>
     <h1>JavaScript Fuction Return:</h1>
   <p>
@@ -51,7 +51,7 @@
   <p>
     When a function reaches a return statement the function stops executing.
     <br />
-    The value after the return keyword is back to the caller
+    The value after the return keyword is back to the caller <br> A function can return any type of value (not only number)
   </p>
   <p id="demo"></p>
   <script>
@@ -60,5 +60,43 @@
     }
     document.getElementById("demo").innerHTML = myfunction();
   </script>
+  </body>
+</html> -->
+
+<html>
+  <body>
+    <h1>JavaScript Return Values:</h1>
+    <p>A function can return any type of value (not only numbers).</p>
+    <p id="demo"></p>
+
+    <script>
+        function name(firstName,lastName){
+            
+            return  firstName + " " + lastName;
+        }
+        let fullname = name("Mansoor","Ali");
+        document.getElementById("demo").innerHTML = fullname;
+
+    </script>
+  </body>
+</html>
+
+
+
+<html>
+  <body>
+    <h1>JavaScript Return Values:</h1>
+    <p>A function can return any type of value (not only numbers).</p>
+    <p id="demo2"></p>
+
+    <script>
+        function calculate(a,b){
+            
+            return  a + b ;
+        }
+        let value = calculate(5,5);
+        document.getElementById("demo2").innerHTML = value;
+
+    </script>
   </body>
 </html>
