@@ -4,5 +4,27 @@
 </h1>
 <h5>Arrow Functions allow a shorter syntax for function expressions.</h5>
 <h5>You can skip function keyword , the return keyword and curly brackets</h5>
+<h3>Arrow Functions were introduced in ES6 and are commonly used in modern JavaScript.
+
+</h3>
+<p>
+    When to Use Arrow Functions
+For short functions <br>
+For callbacks and array methods <br>
+When you do not need your own this <br>
+When Not to Use Arrow Functions <br>
+As object methods <br>
+When you need your own this <br>
+When using function declarations <br>
+</p>
+<p id="demo"></p>
+<script>
+    const multiply = (a,b) =>
+        a*b;
+    
+    let result = multiply(3,4);
+    document.getElementById("demo").innerHTML = result;
+</script>
     </body>
+
 </html>
