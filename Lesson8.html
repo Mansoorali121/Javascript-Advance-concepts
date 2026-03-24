@@ -99,7 +99,7 @@ document.getElementById("demo").innerHTML = person.firstName + " is " + person.a
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
 <h1>JavaScript Object Properties</h1>
@@ -115,6 +115,34 @@ const person = {
 };
 
 document.getElementById("demo").innerHTML = person["firstname"]  + " "+ person["lastname"] + " is " + person["age"];
+</script>
+
+</body>
+</html> -->
+
+
+
+
+
+<html>
+<body>
+<h2>Object Methods</h2>
+<p>A method is a function definition stored as a property value.</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstname: "Mansoor",
+  lastname: "Sahito",
+  age: 24,
+  fullname:function (){
+    return  this.firstname + " " + this.lastname;
+  }
+};
+
+
+document.getElementById("demo").innerHTML = person.fullname();
 </script>
 
 </body>
