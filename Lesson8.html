@@ -55,8 +55,7 @@ When using function declarations <br>
   </body>
 </html> -->
 
-
-<html>
+<!-- <html>
     <body>
         <h1>Creating JavaScript Objects</h1>
 <h2>Using an Object Literal</h2>
@@ -67,13 +66,33 @@ When using function declarations <br>
 <p id="demo"></p>
 
 <script>
-    const personName = {
+    const person = {
         firstName:"Mansoor",
         LastName:"Ali",
         age:50,
         eyeColor:"blue"
     };
 
+document.getElementById("demo").innerHTML = person.firstName + " is " + person.age + " Years old ";
 </script>
     </body>
+</html> -->
+
+<html>
+  <body>
+    <h1>Example</h1>
+    <p>You can also create an empty object, and add the properties later:</p>
+    <h2 id="demo"></h2>
+    <script>
+      const person = {};
+      // Now We Add Properties
+      person.Firstname = "Mansoor";
+      person.Lastname = "Ali";
+      person.age = 24;
+      person.eyeColor = "Blue";
+
+      document.getElementById("demo").innerHTML =
+        person.Firstname + " is " + person.age + " old ";
+    </script>
+  </body>
 </html>
