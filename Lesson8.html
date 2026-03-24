@@ -78,7 +78,7 @@ document.getElementById("demo").innerHTML = person.firstName + " is " + person.a
     </body>
 </html> -->
 
-<html>
+<!-- <html>
   <body>
     <h1>Example</h1>
     <p>You can also create an empty object, and add the properties later:</p>
@@ -95,4 +95,27 @@ document.getElementById("demo").innerHTML = person.firstName + " is " + person.a
         person.Firstname + " is " + person.age + " old ";
     </script>
   </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Object Properties</h1>
+<h2>Property Access Using Brackets []</h2>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstname: "Mansoor",
+  lastname: "Sahito",
+  age: 24,
+};
+
+document.getElementById("demo").innerHTML = person["firstname"]  + " "+ person["lastname"] + " is " + person["age"];
+</script>
+
+</body>
 </html>
