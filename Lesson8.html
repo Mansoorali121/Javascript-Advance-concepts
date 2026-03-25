@@ -255,7 +255,7 @@ document.getElementById("demo1").innerHTML = personn.firstname + " is " + person
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
 <h1>The <b>this</b> Keyword</h1>
@@ -285,4 +285,26 @@ document.getElementById("demo2").innerHTML = person2.hello();
 </script>
 
 </body>
+</html> -->
+
+
+
+
+<html>
+  <body>
+    <h1>JavaScript Display Objects
+</h1>
+<h3>Displaying a JavaScript object will output  <b>[object object]</b></h3>
+<p id="demo"></p>
+    <script>
+      const person = {
+        name:"Mansoor",
+        age:24,
+        class:"Graduation",
+      }
+      let data = person;
+      document.getElementById("demo").innerHTML = data;
+
+    </script>
+  </body>
 </html>
