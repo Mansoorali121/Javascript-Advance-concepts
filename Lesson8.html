@@ -219,7 +219,7 @@ document.getElementById("demo1").innerHTML = personn.firstname + " is " + person
 
 
 
-<html>
+<!-- <html>
   <body>
     <h1>JavaScript Object Methods
 </h1>
@@ -251,4 +251,38 @@ document.getElementById("demo1").innerHTML = personn.firstname + " is " + person
   </body>
 
 
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The <b>this</b> Keyword</h1>
+<p>The <b>this</b> keyword makes it possible to use the same method with different objects.</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+const person1 = {
+  name: "John",
+  hello: function() {
+    return "Hello " + this.name;
+  }
+};
+
+const person2 = {
+  name: "Anna",
+  hello: function() {
+    return "Hello " + this.name;
+  }
+};
+
+document.getElementById("demo").innerHTML = person1.hello();
+document.getElementById("demo2").innerHTML = person2.hello();
+
+</script>
+
+</body>
 </html>
