@@ -192,3 +192,26 @@ document.getElementById("demo").innerHTML = person.fullname();
 </script>
   </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Object Properties</h1>
+<h2>Deleting a Property</h2>
+
+<p id="demo1"></p>
+
+<script>
+const personn = {
+  firstname: "John",
+  lastname: "Doe",
+  age: 50,
+};
+
+delete personn.age;
+
+document.getElementById("demo1").innerHTML = personn.firstname + " is " + personn.age;
+</script>
+
+</body>
+</html>
