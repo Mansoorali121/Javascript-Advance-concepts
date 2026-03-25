@@ -289,7 +289,7 @@ document.getElementById("demo2").innerHTML = person2.hello();
 
 
 
-
+<!-- 
 <html>
   <body>
     <h1>JavaScript Display Objects
@@ -307,4 +307,34 @@ document.getElementById("demo2").innerHTML = person2.hello();
 
     </script>
   </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>Display Properties</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create an Object
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+// Build a Text
+let text = "";
+for (let x in person) {
+  text += person[x] + " ";
+};
+
+// Display the Text
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
 </html>
