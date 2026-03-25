@@ -170,7 +170,7 @@ document.getElementById("demo").innerHTML = person.fullname();
 </html> -->
 
 
-
+<!-- 
 <html>
 
   <body>
@@ -214,4 +214,41 @@ document.getElementById("demo1").innerHTML = personn.firstname + " is " + person
 </script>
 
 </body>
+</html> -->
+
+
+
+
+<html>
+  <body>
+    <h1>JavaScript Object Methods
+</h1>
+<p>What are Object Methods?
+</p>
+<p>Methods are actions that can be performed on objeects.</p>
+<p>Methods are function stored as property values:</p>
+<p>The  <b>this </b>Keyword
+</p>
+<p>In an object method, this refers to the object.
+</p>
+<p id="demo"></p>
+
+
+<script>
+  const personData = {
+
+    name:"Mansoor",
+    class:8,
+    age:14,
+    id:123,
+    getId:function() {
+      return this.id;
+    }
+  };
+  let student_id = personData.getId();
+  document.getElementById("demo").innerHTML ="After this keyword the student id is "+  student_id;
+</script>
+  </body>
+
+
 </html>
