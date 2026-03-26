@@ -308,7 +308,7 @@ document.getElementById("demo2").innerHTML = person2.hello();
     </script>
   </body>
 </html> -->
-
+<!-- 
 
 <!DOCTYPE html>
 <html>
@@ -337,4 +337,39 @@ document.getElementById("demo").innerHTML = text;
 </script>
 
 </body>
+</html> -->
+
+
+
+<html>
+  <body>
+
+
+    <h1>Using Object.values()
+</h1>
+<h4>Object.values() creates an array from the property values:
+
+</h4>
+<p id="demo">
+
+</p>
+<script>
+  const person = {
+    name:"Mansoor",
+    age:24,
+    city:"New Yark",
+  };
+
+  //  Creating an Array from Object
+  const NewArray = Object.values(person);
+
+  //  Now stringfy the array
+
+  const final_array = NewArray.toString();
+  document.getElementById("demo").innerHTML = " "+ final_array;
+
+
+
+</script>
+  </body>
 </html>
