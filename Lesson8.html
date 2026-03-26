@@ -423,3 +423,34 @@ document.getElementById("demo").innerHTML = text;
     </script>
   </body>
 </html>
+
+
+
+<html>
+  <body>
+    <h1>With Constructor</h1>
+    <p>Object Constructors
+</p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p  id="demo6"></p>
+
+<script>
+  function Person (name,age){
+    this.name = name;
+    this.age = age;
+  };
+//  make Object now
+const My_father = new Person("John",56);
+const My_Son = new Person("Riaz",20);
+
+const My_sis = new Person("ALia",26);
+
+document.getElementById("demo4").innerHTML = "My Fahter is "+ My_father.name;
+document.getElementById("demo5").innerHTML = "My Son is "+ My_Son.name;
+document.getElementById("demo6").innerHTML = "My Sis is "+ My_sis.name;
+
+
+</script>
+  </body>
+</html>
