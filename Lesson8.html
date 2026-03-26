@@ -340,7 +340,7 @@ document.getElementById("demo").innerHTML = text;
 </html> -->
 
 
-
+<!-- 
 <html>
   <body>
 
@@ -365,11 +365,38 @@ document.getElementById("demo").innerHTML = text;
 
   //  Now stringfy the array
 
-  const final_array = NewArray.toString();
-  document.getElementById("demo").innerHTML = " "+ final_array;
+  // const final_array = NewArray.toString();
+  document.getElementById("demo").innerHTML = " "+ NewArray;
 
 
 
+</script>
+  </body>
+</html> -->
+
+
+
+<html>
+  <body>
+    <h1>Using JSON.stringify()
+</h1>
+<p>JavaScript objects can be converted to a string with JSON method JSON.stringify().
+
+</p>
+<p>JSON.stringify() is included in JavaScript and supported in all browsers.
+
+</p>
+<p id="demo"></p>
+<script>
+  const person = {
+   name:"Mansoor Sahito",
+   age:24,
+   city:"Nawabshah",
+  };
+
+  let string_convert = JSON.stringify(person);
+  document.getElementById("demo").innerHTML = 'Object is converted into String  <br> <br>' + string_convert;
+  
 </script>
   </body>
 </html>
