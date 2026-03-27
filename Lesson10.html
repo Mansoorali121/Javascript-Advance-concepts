@@ -1,6 +1,28 @@
 <html>
-
-<body>
-    <h1>JavaScript Arrays </h1>
-</body>
+  <body>
+    <h1>JavaScript Arrays</h1>
+    <p>Array is an Object type desgined for stroing data collections:</p>
+    <p><b>Elements: </b> An Array is a list of values , known as elements</p>
+    <p><b>Ordered: </b> Array elements are ordered based on their index</p>
+    <p>
+      <b>Zero Indexed: </b> The first element is at index 0, the second at index
+      1, and so on
+    </p>
+    <p>
+      <b>Dynamic Size: </b> Arrays can grow or shrink as elements are added or
+      removed.
+    </p>
+    <p>
+      <b>Heterogeneous: </b> Arrays can store elements of different data types
+      (numbers,strings,objects and other arrays)
+    </p>
+    <p>Array is: [Mansoor, Manzoor, Ali , Asad] </p>
+    <p id="demo"></p>
+    <script>
+      const names = ["Mansoor", "Manzoor", "Ali", "Asad"];
+      first_name = names[0];
+      document.getElementById("demo").innerHTML =
+        "The first name in the array is " + first_name;
+    </script>
+  </body>
 </html>
