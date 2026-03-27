@@ -1,9 +1,16 @@
 <html>
     <body>
-        <h1>JavaScript Scope  <br> <b>Scope = Visibility </b> </h1>
-        <h5>Scope determines the accessibility of variables</h5>
-        <p>JavaScript variables has 3 types of scopes</p>
-        <p>Global <br> Function Scope <br> Block Scope </p>
-        
+        <p> Global Scope </p>
+        <p id="demo"></p>
+
+        <script>
+            let name = "Mansoor";
+
+            function PersonName (){
+                return name;
+            }
+            document.getElementById("demo").innerHTML = "I am dispalying Name "+ PersonName();
+        </script>
+
     </body>
 </html>
