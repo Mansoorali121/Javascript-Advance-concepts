@@ -397,60 +397,53 @@ document.getElementById("demo").innerHTML = text;
     <h3>Object Constructors</h3>
     <p id="demo"></p>
     <p id="demo2"></p>
-        <p id="demo3"></p>
-
+    <p id="demo3"></p>
 
     <script>
       const myfather = {
-        name:"John",
-        age:55,
-
+        name: "John",
+        age: 55,
       };
       const Myson = {
-        name:"Asim",
-        age:20
+        name: "Asim",
+        age: 20,
       };
-       const Mysis = {
-        name:"ALia",
-        age:26
+      const Mysis = {
+        name: "ALia",
+        age: 26,
       };
 
-      document.getElementById("demo").innerHTML ="My Father is "+  myfather.name;
-            document.getElementById("demo2").innerHTML = "My Son is "+ Myson.name;
-                        document.getElementById("demo3").innerHTML = "My Sis is  "+ Mysis.name;
-
-
+      document.getElementById("demo").innerHTML =
+        "My Father is " + myfather.name;
+      document.getElementById("demo2").innerHTML = "My Son is " + Myson.name;
+      document.getElementById("demo3").innerHTML = "My Sis is  " + Mysis.name;
     </script>
   </body>
 </html>
 
-
-
 <html>
   <body>
     <h1>With Constructor</h1>
-    <p>Object Constructors
-</p>
-<p id="demo4"></p>
-<p id="demo5"></p>
-<p  id="demo6"></p>
+    <p>Object Constructors</p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
 
-<script>
-  function Person (name,age){
-    this.name = name;
-    this.age = age;
-  };
-//  make Object now
-const My_father = new Person("John",56);
-const My_Son = new Person("Riaz",20);
+    <script>
+      function Person(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+      //  make Object now
+      const My_father = new Person("John", 56);
+      const My_Son = new Person("Riaz", 20);
 
-const My_sis = new Person("ALia",26);
+      const My_sis = new Person("ALia", 26);
 
-document.getElementById("demo4").innerHTML = "My Fahter is "+ My_father.name;
-document.getElementById("demo5").innerHTML = "My Son is "+ My_Son.name;
-document.getElementById("demo6").innerHTML = "My Sis is "+ My_sis.name;
-
-
-</script>
+      document.getElementById("demo4").innerHTML =
+        "My Fahter is " + My_father.name;
+      document.getElementById("demo5").innerHTML = "My Son is " + My_Son.name;
+      document.getElementById("demo6").innerHTML = "My Sis is " + My_sis.name;
+    </script>
   </body>
 </html>
