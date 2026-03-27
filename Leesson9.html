@@ -36,11 +36,40 @@
     <p id="demo2"></p>
     <script>
       {
-        let text ="I am Block Scope text";
+        let text = "I am Block Scope text";
         function Blockscope() {
           return text;
         }
-        document.getElementById("demo2").innerHTML = "I am Block Scope <br> " + Blockscope();
+        document.getElementById("demo2").innerHTML =
+          "I am Block Scope <br> " + Blockscope();
+      }
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>JavaScript Code Blocks</h1>
+    <h2>Curly Braces</h2>
+    <p>
+      A code block or block statement is a group of statements enclosed within
+      curly braces { }.
+    </p>
+    <p>
+      Code blocks are important for controlling the flow of execution and
+      defining variable scope within a JavaScript program.
+    </p>
+    <p id="demo4"></p>
+    <script>
+      {
+        let text = " ";
+        const age = 24;
+        if (age > 20) {
+          text = "You are Mature ";
+        } else {
+          text = "You are Young ";
+        }
+        document.getElementById("demo4").innerHTML = text;
       }
     </script>
   </body>
