@@ -27,19 +27,34 @@
   </body>
 </html> -->
 
+<html>
+  <body>
+    <h1>Basic Array Methods</h1>
+    <h3>. Length Array Method</h3>
+    <p>Array is myarray = [1,2,3,4,5]</p>
+    <p id="demo"></p>
+
+    <script>
+      const my_array = [1, 2, 3, 4, 5];
+      document.getElementById("demo").innerHTML =
+        " The Length of Array is " + my_array.length;
+    </script>
+  </body>
+</html>
 
 <html>
-
-<body>
-  <h1>Basic Array Methods
-</h1>
-<h3> . Length Array Method</h3>
-<p> Array is myarray = [1,2,3,4,5]</p>
-<p id="demo"></p>
-
-<script>
-  const my_array = [1,2,3,4,5];
-  document.getElementById("demo").innerHTML =  " The Length of Array is " + my_array.length;
-</script>
-</body>
+  <body>
+    <h1>JavaScript Array toString()</h1>
+    <h4>
+      The toString() method returns the elements of an array as a comma
+      separated string.
+    </h4>
+    <p id="demo2"></p>
+    <script>
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      let myList = fruits.toString();
+      document.getElementById("demo2").innerHTML =
+        "To String Property is applied <br> <br> " + myList;
+    </script>
+  </body>
 </html>
