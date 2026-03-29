@@ -133,8 +133,6 @@ document.getElementById("demo6").innerHTML = "The Array after push is <br> " + f
   </body>
 </html> -->
 
-
-
 <!-- <html>
 <body>
 <h1>JavaScript Arrays</h1>
@@ -154,7 +152,6 @@ document.getElementById("demo2").innerHTML = fruits;
 
 </body>
 </html> -->
-
 
 <!-- <html>
 <body>
@@ -191,7 +188,7 @@ document.getElementById("demo").innerHTML = "Apple is found in position " + posi
 </body>
 </html> -->
 
-
+<!-- 
 
 <html>
 
@@ -206,6 +203,28 @@ document.getElementById("demo").innerHTML = "Apple is found in position " + posi
     document.getElementById("demo").innerHTML = "Is Mansoor in Array ? " + check;
   </script>
 </body>
+</html> -->
+
+<html>
+  <body>
+    JavaScript Array find()
+    <h2>
+      The find() method returns the value of the first Array element that passes
+      a test function
+    </h2>
+    <p>
+      The example finds ( returns the value of ) the first element that ir
+      larger than 18
+    </p>
+    <p id="demo"></p>
+    <script>
+      const number = [4, 5, 6, 20, 22, 25];
+      let check = number.find(value_find_function);
+      // Function here
+      function value_find_function(value) {
+        return value > 18;
+      }
+      document.getElementById("demo").innerHTML = "The first value that is Larger than 18 is "+ check;
+    </script>
+  </body>
 </html>
-
-
