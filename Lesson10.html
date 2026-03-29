@@ -229,7 +229,7 @@ document.getElementById("demo").innerHTML = "Apple is found in position " + posi
   </body>
 </html> -->
 
-<!-- <html>
+<html>
   <body>
     <h1>JavaScript Array Sort</h1>
     <h2>Sorting an Array</h2>
@@ -244,9 +244,9 @@ document.getElementById("demo").innerHTML = "Apple is found in position " + posi
       document.getElementById("demo").innerHTML = sorted_array;
     </script>
   </body>
-</html> -->
+</html>
 
-<html>
+<!-- <html>
   <body>
     <h1>Reversing an Array</h1>
     <h2>The reverse() method reverses the elements in an array:</h2>
@@ -257,4 +257,53 @@ document.getElementById("demo").innerHTML = "Apple is found in position " + posi
       document.getElementById("demo").innerHTML = reversed_array;
     </script>
   </body>
+</html> -->
+
+
+<!-- <html>
+
+
+<body>
+  <h1>JavaScript Array Descending order</h1>
+  <h2> The array is const data = ["Hello","How","Are","Zee","You"]</h2>
+  <p id="demo4"></p>
+  <p id="demo3"></p>
+  <script>
+    const data = ["Hello","How","Are","Zee","You"];
+    let sort_data = data.sort();
+    let descending_order_data = sort_data.reverse();
+    document.getElementById("demo4").innerHTML = "The array in Ascending order is " + sort_data;
+    document.getElementById("demo3").innerHTML = " The array in Descending order is " +  descending_order_data;
+  </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>Sort in Reverse</h2>
+
+<p>The reverse() method reverses the elements in an array.</p>
+<p>By combining sort() and reverse() you can sort an array in descending order:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+// Create and display an array:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+
+// First sort the array
+fruits.sort();
+
+// Then reverse it:
+fruits.reverse();
+
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</body>
 </html>
