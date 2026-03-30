@@ -337,7 +337,7 @@ document.getElementById("demo2").innerHTML = fruitss;
    
 </html> -->
 
-<html>
+<!-- <html>
   <body>
     <h1>JavaScript Array Const</h1>
     <p>ECMAScript 2015 (ES6)</p>
@@ -353,5 +353,30 @@ document.getElementById("demo2").innerHTML = fruitss;
         document.getElementById("demo").innerHTML =error;
       }
     </script>
+  </body>
+</html> -->
+
+
+<html>
+  <body>
+    <h1>
+      Arrays are not Constants
+
+    </h1>
+    <p>keyword const does not define a constant array</p>
+    <p>Because of this we can still change the elements of a constant array</p>
+    <p>JavaScript const variables must assign a value when they are declared</p>
+    <p>Meaning: An array declared with const must be initialized when it is declared.
+
+</p>
+<p>Using const without initializing the array is a syntax error:
+
+</p>
+<p id="demo"></p>
+<script>
+  const cars;
+  cars = ["Saab","Volvo","BMW","Toyota"];
+  document.getElementById("demo").innerHTML = cars;
+</script>
   </body>
 </html>
