@@ -278,7 +278,7 @@ document.getElementById("demo").innerHTML = "Apple is found in position " + posi
 </body>
 </html> -->
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <body>
@@ -293,17 +293,33 @@ document.getElementById("demo").innerHTML = "Apple is found in position " + posi
 
 <script>
 // Create and display an array:
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-document.getElementById("demo1").innerHTML = fruits;
+const fruitss = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruitss;
 
 // First sort the array
-fruits.sort();
+fruitss.sort();
 
 // Then reverse it:
-fruits.reverse();
+fruitss.reverse();
 
-document.getElementById("demo2").innerHTML = fruits;
+document.getElementById("demo2").innerHTML = fruitss;
 </script>
 
 </body>
+</html> -->
+
+
+<html>
+  <body>
+      <h1>JavaScript Numeric Sort</h1>
+  <p>Array is const points = [40,100,1,5,25,10];</p>
+  <p id="demo1"></p>
+  <script>
+    const points = [40,100,1,5,25,10];
+    let sorted_points = points.sort(function (a,b){return a-b});
+    document.getElementById("demo1").innerHTML = sorted_points;
+  </script>
+  </body>
+
+   
 </html>
