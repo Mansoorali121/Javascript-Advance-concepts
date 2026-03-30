@@ -259,7 +259,6 @@ document.getElementById("demo").innerHTML = "Apple is found in position " + posi
   </body>
 </html> -->
 
-
 <!-- <html>
 
 
@@ -308,7 +307,6 @@ document.getElementById("demo2").innerHTML = fruitss;
 </body>
 </html> -->
 
-
 <!-- <html>
   <body>
       <h1>JavaScript Numeric Sort in Ascending order</h1>
@@ -323,7 +321,6 @@ document.getElementById("demo2").innerHTML = fruitss;
 
    
 </html> -->
-
 
 <!-- <html>
   <body>
@@ -342,15 +339,19 @@ document.getElementById("demo2").innerHTML = fruitss;
 
 <html>
   <body>
-    <h1>JavaScript Array Const
-</h1>
-<p>ECMAScript 2015 (ES6)
-</p>
-<p>In 2015, JavaScript introduced an important new keyword: const.
-
-</p>
-<p>It has become a common practice to declare arrays using const:
-
-</p>
+    <h1>JavaScript Array Const</h1>
+    <p>ECMAScript 2015 (ES6)</p>
+    <p>In 2015, JavaScript introduced an important new keyword: const.</p>
+    <p>It has become a common practice to declare arrays using const:</p>
+    <h3>You can not assign a Constant Array</h3>
+    <p id="demo"></p>
+    <script>
+      try {
+        const cars = ["Saab", "Volvo", "BMW", "Toyota"];
+        cars = ["Alto", "Cultus", "Carolla", "Civis"];
+      } catch (error) {
+        document.getElementById("demo").innerHTML =error;
+      }
+    </script>
   </body>
 </html>
