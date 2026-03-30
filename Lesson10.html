@@ -309,14 +309,30 @@ document.getElementById("demo2").innerHTML = fruitss;
 </html> -->
 
 
-<html>
+<!-- <html>
   <body>
-      <h1>JavaScript Numeric Sort</h1>
+      <h1>JavaScript Numeric Sort in Ascending order</h1>
   <p>Array is const points = [40,100,1,5,25,10];</p>
   <p id="demo1"></p>
   <script>
     const points = [40,100,1,5,25,10];
     let sorted_points = points.sort(function (a,b){return a-b});
+    document.getElementById("demo1").innerHTML = sorted_points;
+  </script>
+  </body>
+
+   
+</html> -->
+
+
+<html>
+  <body>
+      <h1>JavaScript Numeric Sort in Descending Order</h1>
+  <p>Array is const points = [40,100,1,5,25,10];</p>
+  <p id="demo1"></p>
+  <script>
+    const points = [40,100,1,5,25,10];
+    let sorted_points = points.sort(function (a,b){return b-a});
     document.getElementById("demo1").innerHTML = sorted_points;
   </script>
   </body>
