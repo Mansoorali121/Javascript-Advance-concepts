@@ -22,4 +22,35 @@
 
 
 
-<
+<html>
+    <body>
+        <h1>Question: 3</h1>
+        <h1>JavaScript Debugger Keyword</h1>
+        <p>It is used to pause the code for debugging</p>
+        <p id="demo"></p>
+        <script>
+            let x = 10;
+            debugger;
+            document.getElementById("demo").innerHTML = "The value of x is " + x;
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <h1>Question: 4</h1>
+        <h1>JavaScript == & === </h1>
+        <p> Loose equality == check value but ignore type , if value is same it return true
+        </p>
+        <p> Strict equality === check value and type , if value and type are not same it return false </p>
+        
+        <p id="demo1"></p>
+        <p id="demo2"> </p>
+        <script>
+            document.getElementById("demo1").innerHTML = " 5 == '5' is  " + (5 == "5") ; 
+            document.getElementById("demo2").innerHTML = " 5 === '5' is " + (5 === "5"); 
+
+        </script>
+    </body>
+</html>
