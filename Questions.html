@@ -60,6 +60,7 @@
   <body>
     <h1>Question: 5</h1>
     <p>Difference between var , let & const </p>
+    <h2>Var Define </h2>
     <p id="demo3"></p>
     <p id="demo4"></p>
     <script>
@@ -73,5 +74,30 @@
       document.getElementById("demo4").innerHTML = "Var a Outside function is " + a;
 
     </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Question: 5</h1>
+    <p> Let Variable</p>
+
+    <p id="demo5"></p>
+        <p id="demo6"></p>
+        <p id="demo7"></p>
+
+    <script>
+      let  b = 20;
+      {
+        let b = 30;
+        document.getElementById("demo5").innerHTML = "Let is inside a block " + b;
+      }
+      document.getElementById("demo6").innerHTML = "Let is outside a block "+b;
+      function letTest(){
+        let  b = 40;
+        document.getElementById("demo7").innerHTML = "Let is inside a function " + b;
+      }   
+      letTest();
+       </script>
   </body>
 </html>
