@@ -101,3 +101,27 @@
        </script>
   </body>
 </html>
+
+
+<html>
+  <body>
+    <h1>Question: 5</h1>
+    <p>Const Variable</p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <script>
+      const c = 50;
+      {
+        const c = 60;
+        document.getElementById("demo8").innerHTML = "Const c is inside block "+c;
+      }
+      document.getElementById("demo9").innerHTML = "Const c is outside block "+c;
+      function cnstTest(){
+        const c = 100;
+        document.getElementById("demo10").innerHTML = "Const c is inside function " +c;
+      }
+      cnstTest();
+          </script>
+  </body>
+</html>
