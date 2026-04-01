@@ -54,3 +54,24 @@
         </script>
     </body>
 </html>
+
+
+<html>
+  <body>
+    <h1>Question: 5</h1>
+    <p>Difference between var , let & const </p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+      var a = 10;
+      var a = 20;
+      function varTest () {
+        var a = 30;
+        document.getElementById("demo3").innerHTML = "Var a inside function is " + a;
+      }
+      varTest();
+      document.getElementById("demo4").innerHTML = "Var a Outside function is " + a;
+
+    </script>
+  </body>
+</html>
