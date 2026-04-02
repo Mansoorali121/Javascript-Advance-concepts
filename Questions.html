@@ -163,9 +163,7 @@
   </body>
 </html> -->
 
-
-
-<html>
+<!-- <html>
   <body>
     <h1>Question: 8</h1>
     <p>JavaScript this keyword</p>
@@ -182,6 +180,25 @@
         }
       }
       person.greet();
+    </script>
+  </body>
+</html> -->
+
+<html>
+  <body>
+    <h1>Question: 8</h1>
+    <h2>This keyword</h2>
+    <button onclick="person.thisFunction()">Click me</button>
+    <p id="demo14"></p>
+    <script>
+      const person = {
+        name: "John",
+        age: 20,
+        thisFunction: function () {
+          document.getElementById("demo14").innerHTML =
+            "Hello " + this.name + " <br> " + "Your age is " + this.age;
+        },
+      };
     </script>
   </body>
 </html>
