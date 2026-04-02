@@ -176,10 +176,12 @@
       const person = {
         name:"John",
         greet:function(){
-          this.name = "Doe";
-          document.getElementById("demo13").innerHTML = "Hello " + greet();
+          
+          
+          document.getElementById("demo13").innerHTML = "Hello " + this.name ;
         }
       }
+      person.greet();
     </script>
   </body>
 </html>
