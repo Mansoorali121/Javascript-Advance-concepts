@@ -184,7 +184,7 @@
   </body>
 </html> -->
 
-<html>
+<!-- <html>
   <body>
     <h1>Question: 8</h1>
     <h2>This keyword</h2>
@@ -199,6 +199,53 @@
             "Hello " + this.name + " <br> " + "Your age is " + this.age;
         },
       };
+    </script>
+  </body>
+</html> -->
+
+
+
+<html>
+  <body>
+    <h1>Question: 9</h1>
+    <h3>JavaScript Call Backs</h3>
+    <p> A callback is a function that is passed as as arguement to <br> another function and is executed after a certain task is completed </p>
+    <p id="demo15"></p>
+    <p> This Task is done without the Callback</p>
+    <script>
+      function greet(name){
+        let text = "Hello " + name;
+        return text;
+        
+      }
+      function welcome (){
+        let text2 = "Welcome !";
+        return text2;
+      }
+      // greet("Ali");
+      // welcome();
+      document.getElementById("demo15").innerHTML = "Greet function is called first " + greet("Ali") + " <br>" + "Then welcome function is called " + welcome();
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Same Question With Callback</h1>
+    <p id="demo16"></p>
+
+    <script>
+      function greet(name, callback){
+        let text = "Hello " + name;
+        return text + " " + callback();
+      }
+
+      function welcome (){
+        return "Welcome!";
+      }
+
+      document.getElementById("demo16").innerHTML =
+        greet("Mansoor", welcome);
     </script>
   </body>
 </html>
