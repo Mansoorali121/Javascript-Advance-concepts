@@ -143,7 +143,7 @@
     </script>
   </body>
 </html> -->
-
+<!-- 
 <html>
   <body>
     <h1>Question: 7</h1>
@@ -159,6 +159,27 @@
       }
       makePizza(callcoustomer);
    
+    </script>
+  </body>
+</html> -->
+
+
+
+<html>
+  <body>
+    <h1>Question: 8</h1>
+    <p>JavaScript this keyword</p>
+    <p>This refers to the object that is currently excuting the function</p>
+    <p>In simple words This means owener of the function</p>
+    <p id="demo13"></p>
+    <script>
+      const person = {
+        name:"John",
+        greet:function(){
+          this.name = "Doe";
+          document.getElementById("demo13").innerHTML = "Hello " + greet();
+        }
+      }
     </script>
   </body>
 </html>
