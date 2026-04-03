@@ -203,8 +203,7 @@
   </body>
 </html> -->
 
-
-
+<!-- 
 <html>
   <body>
     <h1>Question: 9</h1>
@@ -246,6 +245,49 @@
 
       document.getElementById("demo16").innerHTML =
         greet("Mansoor", welcome);
+    </script>
+  </body>
+</html> -->
+
+<!-- <html>
+  <body>
+    <h1>Question: 10</h1>
+    <h3>JavaScript Object Destructuring</h3>
+    <p>
+      Object destructuring is a way to exract values from an object <br />
+      and assign them to variables in a shorter and cleaner way
+    </p>
+    <h3>Without Object Destructuring</h3>
+    <p id="demo"></p>
+    <p>Without Object Destructuring Repeated Code , Long Syntax , Not clean</p>
+    <script>
+      let person = {
+        name: "Ali",
+        age: 20,
+      };
+      let name = person.name;
+      let age = person.age;
+      document.getElementById("demo").innerHTML =
+        "Name: " + name + "<br> " + "Age: " + age;
+    </script>
+  </body>
+</html> -->
+
+<html>
+  <body>
+    <h1>With Object Destructuring</h1>
+    <p id="demo1"></p>
+
+    <script>
+      let personn = {
+        name: "Mansoor",
+        age: 24,
+      };
+
+      let { name, age } = personn;
+
+      document.getElementById("demo1").innerHTML =
+        "Name: " + name + "<br> Age: " + age;
     </script>
   </body>
 </html>
