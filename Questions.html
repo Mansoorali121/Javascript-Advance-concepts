@@ -273,7 +273,7 @@
   </body>
 </html> -->
 
-<html>
+<!-- <html>
   <body>
     <h1>With Object Destructuring</h1>
     <p id="demo1"></p>
@@ -288,6 +288,21 @@
 
       document.getElementById("demo1").innerHTML =
         "Name: " + name + "<br> Age: " + age;
+    </script>
+  </body>
+</html> -->
+
+<html>
+  <body>
+    <h1>Question: 11</h1>
+    <h3>JavaScript Rest Parameter</h3>
+    <p>Rest parameter collects multiple values into a single array.</p>
+    <p id="demo"></p>
+    <script>
+      function sum(...numbers) {
+        return numbers;
+      }
+      document.getElementById("demo").innerHTML = "Sum is " + sum(1, 2);
     </script>
   </body>
 </html>
