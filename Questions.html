@@ -292,7 +292,7 @@
   </body>
 </html> -->
 
-<html>
+<!-- <html>
   <body>
     <h1>Question: 11</h1>
     <h3>JavaScript Rest Parameter</h3>
@@ -303,6 +303,34 @@
         return numbers;
       }
       document.getElementById("demo").innerHTML = "Sum is " + sum(1, 2);
+    </script>
+  </body>
+</html> -->
+
+<html>
+  <body>
+    <h1>Spread Operator</h1>
+    <p>
+      Spread operator is used to expand an array or object into individual
+      elements.
+    </p>
+    <p id="demo"></p>
+    <script>
+      let user = {
+        name: "Mansoor",
+        age: 20,
+      };
+      let newUser = {
+        ...user,
+        city: "karachi",
+      };
+      document.getElementById("demo").innerHTML =
+        "New User name is " +
+        newUser.name +
+        "<br> New User age is " +
+        newUser.age +
+        "<br> New User city is " +
+        newUser.city;
     </script>
   </body>
 </html>
