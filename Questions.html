@@ -351,10 +351,24 @@
   </body>
 </html> -->
 
-
-
 <html>
   <body>
-    <h1>JavaScript Callbacks </h1>
+    <h1>JavaScript Callbacks</h1>
+    <p>Callbacks are shorter version of normal function</p>
+    <p>Without Callback Normal Function</p>
+    <p id="demo1"></p>
+    <p>With call bacl Function </p>
+    <p id="demo2"></p>
+    <script>
+      function sum(a, b) {
+        return a + b;
+      }
+
+      const add = (c, d) => 
+       c + d;
+      document.getElementById("demo2").innerHTML =
+        "Sum with Call Back Function is " + add(5, 10);
+      document.getElementById("demo1").innerHTML = "Sum is " + sum(5, 10);
+    </script>
   </body>
 </html>
