@@ -350,7 +350,7 @@
     </script>
   </body>
 </html> -->
-
+<!-- 
 <html>
   <body>
     <h1>JavaScript Callbacks</h1>
@@ -372,3 +372,25 @@
     </script>
   </body>
 </html>
+
+ -->
+
+
+
+ <html>
+  <body>
+    <h1>Question: 12</h1>
+    <h3>Wothout CallBack </h3>
+    <p id="demo1"></p>
+    <p id="demo"></p>
+    <script>
+      function GetData(){
+        setTimeout(()=>{
+          document.getElementById("demo1").innerHTML = "Data is Fetched";
+        },2000);
+      }
+      GetData();
+      document.getElementById("demo").innerHTML = "Next Work Now";
+    </script>
+  </body>
+ </html>
