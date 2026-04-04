@@ -394,3 +394,26 @@
     </script>
   </body>
  </html>
+
+
+ <html>
+  <body>
+    <h1>With CallBack</h1>
+        <p>Now callBack is used</p>
+
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+      function getData(callback){
+      setTimeout(()=>{
+          document.getElementById("demo3").innerHTML = "Data Loaded";
+        callback();
+      },2000);
+      }
+      getData(function(){
+        document.getElementById("demo4").innerHTML = "Next work now";
+      })
+    </script>
+
+  </body>
+ </html>
