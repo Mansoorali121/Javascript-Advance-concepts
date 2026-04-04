@@ -436,3 +436,21 @@
     </script>
   </body>
 </html>
+
+<html>
+  <body>
+    <h1>Same Question Without Arrow Function</h1>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <script>
+      function fetchName() {
+        setTimeout(() => {
+          document.getElementById("demo5").innerHTML = "Name is Fetched: Ali";
+        }, 2000);
+      }
+      fetchName();
+      document.getElementById("demo6").innerHTML =
+        "Now Second Name is called: ";
+    </script>
+  </body>
+</html>
