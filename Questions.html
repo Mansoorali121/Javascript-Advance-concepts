@@ -375,8 +375,7 @@
 
  -->
 
-
-
+<!-- 
  <html>
   <body>
     <h1>Question: 12</h1>
@@ -416,4 +415,24 @@
     </script>
 
   </body>
- </html>
+ </html> -->
+
+<html>
+  <body>
+    <h1>Name Fetching with Callback</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+      function fetchName(callback) {
+        setTimeout(() => {
+          document.getElementById("demo").innerHTML =
+            "Name is Fetched: Mansoor";
+          callback();
+        }, 2000);
+      }
+      fetchName(function () {
+        document.getElementById("demo1").innerHTML = "Now Second Name: ";
+      });
+    </script>
+  </body>
+</html>
