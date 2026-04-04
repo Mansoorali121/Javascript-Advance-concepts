@@ -417,7 +417,7 @@
   </body>
  </html> -->
 
-<html>
+<!-- <html>
   <body>
     <h1>Name Fetching with Callback</h1>
     <p id="demo"></p>
@@ -453,4 +453,93 @@
         "Now Second Name is called: ";
     </script>
   </body>
+</html> -->
+
+
+
+
+<!-- <html>
+  <body>
+    <h1>Question: 13</h1>
+    <h3>Types of Errors in JavaScript</h3>
+    <p>Syntax Error</p>
+    <p>Runtime Error</p>
+    <p>Logical Error</p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+      //Syntax Error
+      let name = "Mansoor 
+      document.getElementById("demo").innerHTML = "Hello "+ name;
+      let a = 10;
+      document.getElementById("demo2").innerHTML = "Value of a is "+ aa;
+      let age = 18;
+      if( age > 18){
+        document.getElementById("demo2").innerHTML = "You are eligible to vote ";
+      }
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Without Memoization</h2>
+<button onclick="calculate()">Calculate Square</button>
+<p id="output1"></p>
+
+<script>
+function slowSquare(n) {
+  console.log("Calculating...");
+  return n * n;
+}
+
+function calculate() {
+  let result = slowSquare(5);
+  document.getElementById("output1").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>With Memoization</h2>
+<button onclick="calculateMemo()">Calculate Square</button>
+<p id="output2"></p>
+
+<script>
+function memoizedSquare() {
+  let cache = {};
+
+  return function(n) {
+    if (n in cache) {
+      console.log("From cache ✅");
+      return cache[n];
+    } else {
+      console.log("Calculating...");
+      let result = n * n;
+      cache[n] = result;
+      return result;
+    }
+  };
+}
+
+const square = memoizedSquare();
+
+function calculateMemo() {
+  let result = square(5);
+  document.getElementById("output2").innerHTML = result;
+}
+</script>
+
+</body>
 </html>
