@@ -636,8 +636,6 @@ function calculateMemo() {
   </body>
 </html> -->
 
-
-
 <!-- <html>
   <body>
     <h1>Async & Await </h1>
@@ -797,9 +795,7 @@ run();
 </body>
 </html> -->
 
-
-
-<html>
+<!-- <html>
   <body>
     <h1>JavaScript Async / await </h1>
     <h2 id="demo1"></h2>
@@ -812,5 +808,50 @@ run();
       }
       Display();
     </script>
+  </body>
+</html> -->
+
+<html>
+  <body>
+    <h1>Question: 18</h1>
+    <p>
+      A generator function is a special function in JavaScript that can pause
+      and resume its execution.
+    </p>
+    <!doctype html>
+    <html>
+      <head>
+        <title>Generator Function Example</title>
+      </head>
+      <body>
+        <h2>Generator Function Demo</h2>
+        <button onclick="nextStep()">Next Step</button>
+
+        <p id="output"></p>
+
+        <script>
+          // Generator function
+          function* steps() {
+            yield "Step 1: Wake up";
+            yield "Step 2: Eat breakfast";
+            yield "Step 3: Go to work";
+          }
+
+          // Create generator object
+          let routine = steps();
+
+          function nextStep() {
+            let result = routine.next();
+
+            if (!result.done) {
+              document.getElementById("output").innerHTML = result.value;
+            } else {
+              document.getElementById("output").innerHTML =
+                "All steps completed!";
+            }
+          }
+        </script>
+      </body>
+    </html>
   </body>
 </html>
