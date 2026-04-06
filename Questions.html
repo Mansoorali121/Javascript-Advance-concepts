@@ -811,7 +811,7 @@ run();
   </body>
 </html> -->
 
-<html>
+<!-- <html>
   <body>
     <h1>Question: 18</h1>
     <p>
@@ -853,5 +853,67 @@ run();
         </script>
       </body>
     </html>
+  </body>
+</html> -->
+<!-- 
+<html>
+  <body>
+    <h1>Question: 19</h1>
+    <p>What has to be done in order to put Lexical Scoping into practice?</p>
+    <p>
+      Lexical Scoping ka matlab hai ke variable ki access us jagah par depend
+      karti hai jahan wo code likha gaya hai (written position).
+    </p>
+    <p>
+      Inner function apne parent (outer) function ke variables ko access kar
+      sakta hai.
+    </p>
+    <p id="demo1"></p>
+
+    <script>
+      function outer(){
+        let name = "Mansoor";
+        function inner (){
+          document.getElementById("demo1").innerHTML = "Hello "+name;
+        }
+        inner ();
+
+      };
+      outer();
+    </script>
+  </body>
+</html> -->
+
+
+
+<html>
+  <body>
+    <h1>Without Lexical Scoping</h1>
+    <p id="demo1"></p>
+    <script>
+      function outer (name){
+        return "Hello " +name;
+      };
+      final_value = outer("Mansoor");
+      document.getElementById("demo1").innerHTML = final_value;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>With Lexical Scoping</h1>
+    <P id="demo2"></P>
+    <script>
+     function outer() {
+      let name = "Mansoor";
+      function inner (){
+        return "Hello "+name;
+      }
+      return inner ();
+     }
+     value = outer();
+     document.getElementById("demo2").innerHTML = value;
+    </script>
   </body>
 </html>
