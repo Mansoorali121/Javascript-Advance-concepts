@@ -661,7 +661,7 @@ function calculateMemo() {
   </body>
 </html> -->
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <body>
@@ -741,4 +741,76 @@ run();
 </script>
 
 </body>
+</html> -->
+
+<!-- 
+<html>
+<body>
+<h1>JavaScript async / await</h1>
+<p id="demo"></p>
+
+<script>
+// Function to display something
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+// Create a promise
+async function myFunction() {return "Hello";}
+
+// Handle promise result
+myFunction().then(
+  function(value) {myDisplayer(value);},
+  function(value) {myDisplayer(value);}
+);
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript async / await</h1>
+<p id="demo1"></p>
+
+<script>
+// Function to display something
+function myDisplayer(some) {
+  document.getElementById("demo1").innerHTML = some;
+}
+
+function step1() {
+  return Promise.resolve("A");
+}
+
+async function run() {
+  let value = await step1();
+  myDisplayer(value);
+}
+
+run();
+</script>
+
+</body>
+</html> -->
+
+
+
+<html>
+  <body>
+    <h1>JavaScript Async / await </h1>
+    <h2 id="demo1"></h2>
+    <script>
+      async function Display(){
+        let myPromise = new Promise(function(res,rej){
+          res("Hello World");
+        });
+        document.getElementById("demo1").innerHTML =    myPromise;
+      }
+      Display();
+    </script>
+  </body>
 </html>
