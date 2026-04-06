@@ -572,7 +572,7 @@ function calculateMemo() {
       <br />
       and initialize multiple objects with the same structure and properties.
     </p>
-    <p>Wihtout Constructor Function Manual Programm </p>
+    <p>Wihtout Constructor Function Manual Programm</p>
     <p id="demo1"></p>
     <script>
       let student1 = {
@@ -590,6 +590,24 @@ function calculateMemo() {
         student1.name +
         "<br> Student 2 Name is " +
         student2.name;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>With Constructor Function</h1>
+    <p id="demo3"></p>
+    <script>
+      function Student(name, age, course) {
+        this.name = name;
+        this.age = age;
+        this.course = course;
+      }
+      let data1 = new Student("Mansoor", 24, "JS");
+      let data2 = new Student("Ali", 20, "Python");
+      document.getElementById("demo3").innerHTML =
+        "The Student 1 is " + data1.name + "<br> Student 2 is " + data2.name;
     </script>
   </body>
 </html>
