@@ -638,7 +638,7 @@ function calculateMemo() {
 
 
 
-<html>
+<!-- <html>
   <body>
     <h1>Async & Await </h1>
     <h3>Promise chains can become long.
@@ -659,4 +659,86 @@ function calculateMemo() {
 
 
   </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Promises</h1>
+<h2>Running Functions in Steps</h2>
+
+<p id="demo"></p>
+
+<script>
+// Function to display something
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+// Three functions to run in steps
+function step1() {
+  return Promise.resolve("A");
+}
+function step2(value) {
+  return Promise.resolve(value + "B");
+}
+function step3(value) {
+  return Promise.resolve(value + "C");
+}
+
+// Run the three functions in steps
+step1()
+.then(function(value) {
+  return step2(value);
+})
+.then(function(value) {
+  return step3(value);
+})
+.then(function(value) {
+  myDisplayer(value);
+});
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript async / await</h1>
+
+<p id="demo1"></p>
+
+<script>
+// Function to display something
+function myDisplayer(some) {
+  document.getElementById("demo1").innerHTML = some;
+}
+
+// Three functions to run in steps
+function step1() {
+  return Promise.resolve("A");
+}
+function step2(value) {
+  return Promise.resolve(value + "B");
+}
+function step3(value) {
+  return Promise.resolve(value + "C");
+}
+
+// Function to run the three functions in steps
+async function run() {
+  let v1 = await step1();
+  let v2 = await step2(v1);
+  let v3 = await step3(v2);
+  myDisplayer(v3);
+}
+
+run();
+</script>
+
+</body>
 </html>
