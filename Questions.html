@@ -612,7 +612,7 @@ function calculateMemo() {
   </body>
 </html> -->
 
-<html>
+<!-- <html>
   <body>
     <h1>Question: 17</h1>
     <h3>JavaScript Promises</h3>
@@ -623,5 +623,40 @@ function calculateMemo() {
         completion (success) or failure of an asynchronous operation.
       
     </p>
+    <p id="demo"></p>
+    <script>
+      let promise = new Promise (function (res,rej){
+        res("Work Is done");
+      });
+      promise.then(function(value){
+        res = value;
+        document.getElementById("demo").innerHTML = res;
+      })
+    </script>
+  </body>
+</html> -->
+
+
+
+<html>
+  <body>
+    <h1>Async & Await </h1>
+    <h3>Promise chains can become long.
+
+    </h3>
+    <p>async and await were created to reduce nesting and improve readability.
+
+</p>
+<p>async makes a function return a Promise
+
+</p>
+<p>await makes a function wait for a Promise
+
+</p>
+<script>
+
+</script>
+
+
   </body>
 </html>
