@@ -808,7 +808,7 @@ run();
         let myPromise = new Promise(function(res,rej){
           res("Hello World");
         });
-        document.getElementById("demo1").innerHTML =    myPromise;
+        document.getElementById("demo1").innerHTML =   await myPromise;
       }
       Display();
     </script>
