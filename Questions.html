@@ -1068,6 +1068,106 @@ run();
     <h3>10.Promises</h3>
     <h3>11.For...of Loop</h3>
     <h3>12.Map and set</h3>
-    
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>1.Let & const</h1>
+    <p>These variables has block and function scope</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+      {
+        let name = "Mansoor";
+        document.getElementById("demo1").innerHTML = "Hello " + name;
+      }
+      const caste = "Ali";
+      document.getElementById("demo2").innerHTML = "My Caste is " + caste;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>2. Arrow Function</h1>
+    <p>A shorter syntax for writing a function</p>
+    <p id="demo3"></p>
+    <script>
+      const sum = (a, b) => a + b;
+      document.getElementById("demo3").innerHTML =
+        "Sum With Arrow Function is " + sum(5, 5);
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>3. Tempelate Literals</h1>
+    <p>It Use backticks for dynamic strings.</p>
+    <p id="demo4"></p>
+    <script>
+      let name = "Mansoor";
+      let city = "Karachi";
+      document.getElementById("demo4").innerHTML = `Hello ${name} from ${city}`;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>4. Default Parameters</h1>
+    <p>Set default values in function parameters.</p>
+    <p id="demo5"></p>
+    <script>
+      function greet(name = "Guest") {
+        document.getElementById("demo5").innerHTML = "Hello " + name;
+      }
+      greet();
+      greet("Mansoor");
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>5. Destructuring</h1>
+    <p>Exract values from arrays/objects easily</p>
+    <p id="demo6"></p>
+    <script>
+      const numbers = [10, 20];
+      const [a, b] = numbers;
+      document.getElementById("demo6").innerHTML = "a is " + a + " b is " + b;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>6. Spread Operator</h1>
+    <p>Expand arrays/objects into individual elements</p>
+    <p id="demo7"></p>
+    <script>
+      const arr1 = [1, 2, 3, 4, 5];
+      const arr2 = [...arr1, 6, 7, 8, 9, 10];
+      document.getElementById("demo7").innerHTML =
+        "Array 2 After expending is " + arr2;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>7. Rest Parameter</h1>
+    <p>Collects multiple arguements into an array</p>
+    <p id="demo8"></p>
+    <script>
+      function sum(...numbers) {
+        return numbers.reduce((a, b) => a + b);
+      }
+
+      document.getElementById("demo8").innerHTML =
+        "Sum with Rest Parameter is " + sum(1, 2, 3, 4);
+    </script>
   </body>
 </html>
