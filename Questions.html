@@ -884,8 +884,6 @@ run();
   </body>
 </html> -->
 
-
-
 <!-- <html>
   <body>
     <h1>Without Lexical Scoping</h1>
@@ -918,27 +916,26 @@ run();
   </body>
 </html> -->
 
-
 <html>
   <body>
     <h1>Question: 20</h1>
     <p>Call() Apply() & Bind() Method</p>
-    <p>Lets Learn  <b>this</b> Keyword Concept Again</p>
-    <p>This program uses <b>this </b>Keyword </p>
+    <p>Lets Learn <b>this</b> Keyword Concept Again</p>
+    <p>This program uses <b>this </b>Keyword</p>
     <p id="demo1"></p>
     <script>
       const person = {
-        name:"Mansoor",
-        age:25,
-        greet:function(){
-          document.getElementById("demo1").innerHTML = "Hello "+this.name + "Your age is "+this.age;
-        }
-      }
+        name: "Mansoor",
+        age: 25,
+        greet: function () {
+          document.getElementById("demo1").innerHTML =
+            "Hello " + this.name + "Your age is " + this.age;
+        },
+      };
       person.greet();
     </script>
   </body>
 </html>
-
 
 <html>
   <body>
@@ -946,32 +943,54 @@ run();
     <p id="demo2"></p>
     <script>
       const person1 = {
-        name:"Mansoor",
+        name: "Mansoor",
       };
-      function greett (){
-        document.getElementById("demo2").innerHTML =  "Hello "+this.namel
+      function greett() {
+        document.getElementById("demo2").innerHTML = "Hello " + this.namel;
       }
       greett();
     </script>
   </body>
 </html>
 
-
-
 <html>
   <body>
-    <h5>To Solve this Problem there is Call , Apply & Bind Method </h5>
+    <h5>To Solve this Problem there is Call , Apply & Bind Method</h5>
+    <p>
+      The call() method is used to call a function with an object as an
+      argument.
+    </p>
     <h3>Call Method</h3>
     <p id="demo3"></p>
     <script>
       const person2 = {
-        name:"Mansoor",
-
+        name: "Mansoor",
       };
-      function greeett(){
-        document.getElementById("demo3").innerHTML = "Hello "+this.name;
+      function greeett() {
+        document.getElementById("demo3").innerHTML = "Hello " + this.name;
       }
       greeett.call(person2);
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Apply() Method</h1>
+    <p>
+      The apply() method is similar to call(), but it passes arguments in an
+      array.
+    </p>
+    <p id="demo5"></p>
+    <script>
+      const person4 = {
+        name: "Mansoor",
+      };
+      function greeeett(city, country) {
+        document.getElementById("demo5").innerHTML =
+          "Hello " + this.name + " You are from " + city + "  " + country;
+      }
+      greeeett.apply(person4, ["Karachi", "Pakistan"]);
     </script>
   </body>
 </html>
