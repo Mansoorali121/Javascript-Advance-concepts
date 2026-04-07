@@ -955,3 +955,23 @@ run();
     </script>
   </body>
 </html>
+
+
+
+<html>
+  <body>
+    <h5>To Solve this Problem there is Call , Apply & Bind Method </h5>
+    <h3>Call Method</h3>
+    <p id="demo3"></p>
+    <script>
+      const person2 = {
+        name:"Mansoor",
+
+      };
+      function greeett(){
+        document.getElementById("demo3").innerHTML = "Hello "+this.name;
+      }
+      greeett.call(person2);
+    </script>
+  </body>
+</html>
