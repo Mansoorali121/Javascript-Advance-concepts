@@ -994,3 +994,30 @@ run();
     </script>
   </body>
 </html>
+
+<html>
+  <body>
+    <h1>Bind() Method</h1>
+    <p>
+      Like with call() and apply(), the bind() method can borrow a method from
+      <br />
+      another object. Unlike call() and apply(), the bind() method does not run
+      <br />
+      the function immediately. Instead, it returns a new function that can be
+      <br />
+      called later. The new function remembers the this value you chose.
+    </p>
+    <p id="demo6"></p>
+    <script>
+      const person6 = {
+        name: "Sara",
+      };
+      function greeeting(city) {
+        document.getElementById("demo6").innerHTML =
+          "Hello " + this.name + "You are from " + city;
+      }
+      const newFunction = greeeting.bind(person6);
+      newFunction("Lahore");
+    </script>
+  </body>
+</html>
