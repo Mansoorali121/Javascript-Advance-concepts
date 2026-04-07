@@ -916,7 +916,7 @@ run();
   </body>
 </html> -->
 
-<html>
+<!-- <html>
   <body>
     <h1>Question: 20</h1>
     <p>Call() Apply() & Bind() Method</p>
@@ -1018,6 +1018,32 @@ run();
       }
       const newFunction = greeeting.bind(person6);
       newFunction("Lahore");
+    </script>
+  </body>
+</html> -->
+
+<html>
+  <body>
+    <h1>Question: 21</h1>
+    <h3>What is a closure in JavaScript</h3>
+    <p>
+      A closure is a function that remembers variables from its outer <br />
+      scope even after the outer function has finished executing.
+    </p>
+    <p id="demo2"></p>
+    <script>
+      function outer() {
+        let name = "Mansoor";
+
+        function inner() {
+          document.getElementById("demo2").innerHTML = "Hello "+name;
+        }
+
+        return inner;
+      }
+
+      const myFunc = outer();
+      myFunc();
     </script>
   </body>
 </html>
