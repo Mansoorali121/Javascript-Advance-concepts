@@ -178,7 +178,7 @@
   </body>
 </html> -->
 
-<html>
+<!-- <html>
   <body>
     <h1>Default Parameters</h1>
     <p>This one is default Parameter</p>
@@ -211,6 +211,129 @@
       document.getElementById("demo6").innerHTML = "Hello "+name;
     }
     greeting2("Mansoor");
+    </script>
+  </body>
+</html> -->
+
+<html>
+  <body>
+    <h1>Destructuring</h1>
+    <h3>Basic Array Destructuring</h3>
+    <p id="demo1"></p>
+    <script>
+      const array1 = [1, 2, 3];
+      const [a, b] = array1;
+      document.getElementById("demo1").innerHTML =
+        "The Value of a is " + a + " And the value of b is " + b;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Destructuring and skip values</h1>
+    <p id="demo2"></p>
+    <script>
+      const colors = ["Red", "Green", "Blue"];
+      const [first, , third] = colors;
+      document.getElementById("demo2").innerHTML =
+        "The first color is " + first + " and the third color is " + third;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Default values Destructuring</h1>
+    <p id="demo5"></p>
+    <script>
+      let nums = [2];
+      let [x, y = 20] = nums;
+      document.getElementById("demo5").innerHTML =
+        "The value of x is " + x + " and value of y is " + y;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Object Destructuring</h1>
+    <p id="demo6"></p>
+    <script>
+      let student = {
+        name: "Mansoor",
+        age: 24,
+      };
+      let { name, age } = student;
+      document.getElementById("demo6").innerHTML =
+        "The name is " + name + " and the age is " + age;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Renamee Variables using Destructuring</h1>
+    <p id="demo7"></p>
+    <script>
+      let student2 = {
+        name: "Mansoor",
+        age: 24,
+      };
+      let { name: StudentName, age: StudentAge } = student2;
+      document.getElementById("demo7").innerHTML =
+        "The name is " + StudentName + " and the age is " + StudentAge;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Variables swapping Destructuring</h1>
+    <p>let aa = 5; let bb = 10; This is the initial value</p>
+    <p id="demo8"></p>
+    <script>
+      let aa = 5;
+      let bb = 10;
+      [aa, bb] = [bb, aa];
+      document.getElementById("demo8").innerHTML =
+        "The value of a is " + aa + " and the value of b is " + bb;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Nested Destructuring</h1>
+    <p id="demo9"></p>
+    <script>
+      let person = {
+        name: "Ali",
+        adddress: {
+          city: "Karachi",
+        },
+      };
+      let {
+        adddress: { city },
+      } = person;
+      document.getElementById("demo9").innerHTML = "The city is " + city;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Array Inside Object Destructuring</h1>
+    <p id="demo10"></p>
+    <script>
+      let data = {
+        skills: ["HTML", "CSS", "JavaScript"],
+      };
+      let {
+        skills: [skill1, skill2],
+      } = data;
+      document.getElementById("demo10").innerHTML =
+        "The first skill is " + skill1 + " and the second skill is " + skill2;
     </script>
   </body>
 </html>
