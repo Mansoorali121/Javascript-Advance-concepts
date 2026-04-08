@@ -1,0 +1,71 @@
+<html>
+  <body>
+    <h1>Question: 1</h1>
+    <h3>Let and Const</h3>
+    <p>A Program to sum up a & b with block scope</p>
+    <p id="demo"></p>
+    <p>A program to show full name with block scope</p>
+    <p id="demo1"></p>
+
+    <script>
+      {
+        let a = 10;
+        let b = 20;
+        let sum = a + b;
+
+        document.getElementById("demo").innerHTML =
+          "The sum of two variables is " + sum;
+      }
+
+      {
+        const first_name = "Mansoor";
+        const last_name = "Sahito";
+        const full_name = first_name + " " + last_name;
+        document.getElementById("demo1").innerHTML =
+          "The full name is " + full_name;
+      }
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Function Return</h1>
+    <p id="demo4"></p>
+    <script>
+      function showName() {
+        let name = "Mansoor";
+        document.getElementById("demo4").innerHTML = "The name is " + name;
+      }
+      showName();
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Let & Const with Function Scope </h1>
+    <p> Let with function scope </p>
+    <p id="demo2"></p>
+    <p>Let with function scope </p>
+    <p id="demo3"></p>
+    <script>
+      function sum() {
+        let a = 10;
+        let b = 20;
+        let answer = a + b;
+        document.getElementById("demo2").innerHTML = "The sum is " + answer;
+      };
+      function Multiplication(){
+        const a = 10;
+        const b = 2;
+        const answer = a*b;
+        document.getElementById("demo3").innerHTML = "The multiplication is "+answer;
+    
+      }
+      sum();
+      Multiplication();
+      
+    </script>
+  </body>
+</html>
