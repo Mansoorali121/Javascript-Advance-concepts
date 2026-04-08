@@ -139,7 +139,7 @@
     </script>
   </body>
 </html> -->
-
+<!-- 
 <html>
   <body>
     <h1>Tempelate Literals</h1>
@@ -174,6 +174,23 @@
       const b = 20;
       const sum = `The sum of ${a}  and ${b} is ${a + b}`;
       document.getElementById("demo3").innerHTML = sum;
+    </script>
+  </body>
+</html> -->
+
+<html>
+  <body>
+    <h1>Default Parameters</h1>
+    <p>This one is default Parameter</p>
+    <p id="demo1"></p>
+    <p>This one is with parameter</p>
+    <p id="demo2"></p>
+    <script>
+      function showName(name = "Mansoor") {
+        document.getElementById("demo1").innerHTML = "Hello " + name;
+      }
+      showName();
+      // showName("Sahito");
     </script>
   </body>
 </html>
