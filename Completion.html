@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
   <body>
     <h1>Question: 1</h1>
     <h3>Let and Const</h3>
@@ -44,10 +44,10 @@
 
 <html>
   <body>
-    <h1>Let & Const with Function Scope </h1>
-    <p> Let with function scope </p>
+    <h1>Let & Const with Function Scope</h1>
+    <p>Let with function scope</p>
     <p id="demo2"></p>
-    <p>Let with function scope </p>
+    <p>Let with function scope</p>
     <p id="demo3"></p>
     <script>
       function sum() {
@@ -55,17 +55,87 @@
         let b = 20;
         let answer = a + b;
         document.getElementById("demo2").innerHTML = "The sum is " + answer;
-      };
-      function Multiplication(){
+      }
+      function Multiplication() {
         const a = 10;
         const b = 2;
-        const answer = a*b;
-        document.getElementById("demo3").innerHTML = "The multiplication is "+answer;
-    
+        const answer = a * b;
+        document.getElementById("demo3").innerHTML =
+          "The multiplication is " + answer;
       }
       sum();
       Multiplication();
-      
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Let & Const with Global Scope with Same variable names</h1>
+    <p>Let Global Scope</p>
+    <p id="demo5"></p>
+    <p>Const Global Scope</p>
+    <p id="demo6"></p>
+    <script>
+      const a = 20;
+      const b = 30;
+      function sum() {
+        result = a + b;
+        document.getElementById("demo5").innerHTML = "The sum is " + result;
+      }
+
+      function multiply() {
+        result = a * b;
+        document.getElementById("demo6").innerHTML =
+          "The Multiplication is " + result;
+      }
+      multiply();
+      sum();
+    </script>
+  </body>
+</html> -->
+
+<html>
+  <body>
+    <h1>Question: 2</h1>
+    <h3>Arrow Functions</h3>
+    <p>Normal function without Arrow</p>
+    <p id="demo7"></p>
+    <p>Arrow Function</p>
+    <p id="demo8"></p>
+    <script>
+      function sum(a, b) {
+        return a + b;
+      }
+      let sum_value = sum(2, 3);
+      document.getElementById("demo7").innerHTML =
+        "The sum of a & b is " + sum_value;
+      const sum2 = (a, b) => a + b;
+      document.getElementById("demo8").innerHTML =
+        "The sum of a & b with Arrow function is " + sum2(2, 3);
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Arrow Function other program</h1>
+    <p>Without Arrow Function Program</p>
+    <p id="demo9"></p>
+    <p>With Arrow Function Program</p>
+    <p id="demo10"></p>
+    <script>
+      function showName() {
+        let name = "Mansoor";
+        document.getElementById("demo9").innerHTML = "The name is " + name;
+      }
+      showName();
+      const nameShow = () => {
+        let mane = "Mansoor";
+        document.getElementById("demo10").innerHTML =
+          "The name with Arrow function is " + mane;
+      };
+      nameShow();
     </script>
   </body>
 </html>
