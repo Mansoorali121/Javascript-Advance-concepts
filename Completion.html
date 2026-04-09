@@ -338,7 +338,7 @@
   </body>
 </html> -->
 
-<html>
+<!-- <html>
   <body>
     <h1>Spread Operator ( ... )</h1>
     <h3>Array copy using Spread Operator</h3>
@@ -421,28 +421,25 @@
       const object2 = {
         caste: "Sahito",
       };
-      const result_is = {...object1, ...object2};
+      const result_is = { ...object1, ...object2 };
       document.getElementById("demo6").innerHTML =
-        "The copy of object is done & value is " + result_is.name ;
+        "The copy of object is done & value is " + result_is.name;
     </script>
   </body>
 </html>
 
-
-
 <html>
   <body>
     <h1>Add New Property in Object</h1>
-    <p>Added name Property in object using Spread operator </p>
+    <p>Added name Property in object using Spread operator</p>
     <p id="demo7"></p>
     <script>
       const personn = {
-        class:8,
-        age:14,
+        class: 8,
+        age: 14,
       };
-      const updated = {...personn, name:"Mesam"};
+      const updated = { ...personn, name: "Mesam" };
       document.getElementById("demo7").innerHTML = updated.name;
-
     </script>
   </body>
 </html>
@@ -453,18 +450,65 @@
     <p id="demo8"></p>
     <script>
       const userr = {
-        name:"Ali",
-        address:{
-          city:"Karachi",
-        }
-
+        name: "Ali",
+        address: {
+          city: "Karachi",
+        },
       };
       const updated_User = {
         ...userr,
-        address:{...userr.address,city:"Nawabshah"}
+        address: { ...userr.address, city: "Nawabshah" },
       };
-      document.getElementById("demo8").innerHTML ="The Updated User is in  "+updated_User.address.city;
-      
+      document.getElementById("demo8").innerHTML =
+        "The Updated User is in  " + updated_User.address.city;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Merge two arrays & add elements from Start and End</h1>
+    <p id="demo9"></p>
+    <script>
+      const fruits = ["Apple", "Banana"];
+      const vegetables = ["Carrot"];
+      const merged_array = ["Mango", ...fruits, ...vegetables, "Orange"];
+      document.getElementById("demo9").innerHTML =
+        "The merged array is " + merged_array;
+    </script>
+  </body>
+</html> -->
+
+<html>
+  <body>
+    <h1>JavaScript Basic Promise</h1>
+    <p>Make simple promise which will be resolved</p>
+    <p id="demo"></p>
+    <script>
+      let promise = new Promise((resolve, reject) => {
+        resolve("Promise Completed");
+      });
+      promise.then((result) => {
+        document.getElementById("demo").innerHTML = "Result arrived...! " + result;
+      });
+    </script>
+  </body>
+</html>
+
+
+<html>
+  <body>
+    <h1>
+      Reject Case Promise
+    </h1>
+    <p id="demo1"></p>
+    <script>
+      let promisee = new Promise((reject,resolve)=>{
+      reject("Error Occured..!")
+      });
+      promisee
+      .then((res)=>document.getElementById("demo1").innerHTML = "Respose.. "+res)
+      .catch((err)=>document.getElementById("demo1").innerHTML = "Error "+err);
     </script>
   </body>
 </html>
