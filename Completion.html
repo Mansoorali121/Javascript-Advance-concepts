@@ -479,7 +479,7 @@
   </body>
 </html> -->
 
-<html>
+<!-- <html>
   <body>
     <h1>JavaScript Basic Promise</h1>
     <p>Make simple promise which will be resolved</p>
@@ -536,6 +536,63 @@
       CheckNumber(5)
         .then((res) => (document.getElementById("demo2").innerHTML = res))
         .catch((err) => (document.getElementById("demo2").innerHTML = err));
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>SetTimeout + Promise</h1>
+    <p id="demo3"></p>
+    <script>
+      let promiseee = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("Data has been Fetched ");
+        }, 2000);
+      });
+      promiseee.then(
+        (res) => (document.getElementById("demo3").innerHTML = res),
+      );
+    </script>
+  </body>
+</html> -->
+
+<html>
+  <body>
+    <h1>Chaining Promises</h1>
+    <p>An Example of Chaining Promises</p>
+    <p id="demo4"></p>
+    <script>
+      let promise = new Promise((resolve, reject) => {
+        resolve(5);
+      });
+      promise
+        .then((num) => {
+          document.getElementById("demo4").innerHTML = num;
+          return num * 2;
+        })
+        .then((num) => {
+          document.getElementById("demo4").innerHTML = num;
+          return num * 2;
+        })
+        .then((num) => (document.getElementById("demo4").innerHTML = num));
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Function Returning Promise</h1>
+    <p id="demo5"></p>
+    <script>
+      function GetData() {
+        return new Promise((resolve, reject) => {
+          resolve("Data From Function");
+        });
+      }
+      GetData().then(
+        (res) => (document.getElementById("demo5").innerHTML = res),
+      );
     </script>
   </body>
 </html>
