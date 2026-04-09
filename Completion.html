@@ -395,3 +395,35 @@
     </script>
   </body>
 </html>
+
+<html>
+  <h1>Object Copy with Spread Operator</h1>
+  <p id="demo5"></p>
+  <script>
+    const user = {
+      name: "Mansoor",
+      age: 24,
+    };
+    const newUser = { ...user };
+    document.getElementById("demo5").innerHTML =
+      "The new user is " + newUser.name;
+  </script>
+</html>
+
+<html>
+  <body>
+    <h1>Combine two objects</h1>
+    <p id="demo6"></p>
+    <script>
+      const object1 = {
+        name: "Mansooor",
+      };
+      const object2 = {
+        caste: "Sahito",
+      };
+      const result_is = {...object1, ...object2};
+      document.getElementById("demo6").innerHTML =
+        "The copy of object is done & value is " + result_is.name ;
+    </script>
+  </body>
+</html>
