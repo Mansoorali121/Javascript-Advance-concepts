@@ -353,30 +353,45 @@
   </body>
 </html>
 
-
-
 <html>
   <body>
-    <h1>Merge Array using Spread Operator </h1>
+    <h1>Merge Array using Spread Operator</h1>
     <p id="demo2"></p>
     <script>
-      let a = [10,20,30];
-      let b = [...a , 40,50,60];
-      document.getElementById("demo2").innerHTML = "The Merge is complete & answer is "+b;
+      let a = [10, 20, 30];
+      let b = [...a, 40, 50, 60];
+      document.getElementById("demo2").innerHTML =
+        "The Merge is complete & answer is " + b;
     </script>
   </body>
 </html>
 
 <html>
   <body>
-    <h1>Array Merging with new Method </h1>
+    <h1>Array Merging with new Method</h1>
     <p id="demo3"></p>
     <script>
-      let arr1 = [1,2,3,4,5];
-      let arr2 = [6,7,8,9,10];
-      let result = [...arr1, arr2];
-      document.getElementById("demo3").innerHTML = "Array Merge with new method "+result;
+      let arr1 = [1, 2, 3, 4, 5];
+      let arr2 = [6, 7, 8, 9, 10];
+      let result = [...arr1, ...arr2];
+      document.getElementById("demo3").innerHTML =
+        "Array Merge with new method " + result;
     </script>
+  </body>
+</html>
 
+<html>
+  <body>
+    <h1>Add Elements in array with Spread Operator</h1>
+
+    <p id="demo4"></p>
+    <script>
+      let nums = [2, 3];
+      let final_result = [1, ...nums, 4];
+      document.getElementById("demo4").innerHTML =
+        "The final result of array after adding 1 at start & 4 at end is " +
+        " <br>" +
+        final_result;
+    </script>
   </body>
 </html>
