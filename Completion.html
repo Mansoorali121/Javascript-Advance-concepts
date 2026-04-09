@@ -596,3 +596,24 @@
     </script>
   </body>
 </html>
+
+<html>
+  <body>
+    <h1>Age Check with Promises</h1>
+    <p id="demo6"></p>
+    <script>
+      function checkAge(age) {
+        return new Promise((resolve, reject) => {
+          if (age >= 18) {
+            resolve("Allowed to vote");
+          } else {
+            reject("Not Allowed");
+          }
+        });
+      }
+      checkAge(20)
+        .then((res) => (document.getElementById("demo6").innerHTML = res))
+        .catch((err) => (document.getElementById("demo6").innerHTML = err));
+    </script>
+  </body>
+</html>
