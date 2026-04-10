@@ -688,16 +688,30 @@
   </body>
 </html>
 
-
-
 <html>
   <body>
     <h1>Get values in Map</h1>
     <p id="demo1"></p>
     <script>
       let mymap = new Map();
-      map.set("name","Mansoor");
-      document.getElementById("demo1").innerHTML = "The name is "+map.get("name");
-          </script>
+      map.set("name", "Mansoor");
+      document.getElementById("demo1").innerHTML =
+        "The name is " + map.get("name");
+    </script>
   </body>
 </html>
+
+
+<html>
+  <body>
+    <h1>Check key Exists In Map</h1>
+    <p id="demo2"></p>
+    <script>
+      let maapp = new Map();
+      map.set("City","Karachi");
+      document.getElementById("demo2").innerHTML = "The value city exists: "+map.has("City");
+    </script>
+  </body>
+</html>
+
+
