@@ -670,7 +670,7 @@
     </script>
   </body>
 </html> -->
-
+<!-- 
 <html>
   <body>
     <h1>Map</h1>
@@ -701,15 +701,15 @@
   </body>
 </html>
 
-
 <html>
   <body>
     <h1>Check key Exists In Map</h1>
     <p id="demo2"></p>
     <script>
       let maapp = new Map();
-      map.set("City","Karachi");
-      document.getElementById("demo2").innerHTML = "The value city exists: "+map.has("City");
+      map.set("City", "Karachi");
+      document.getElementById("demo2").innerHTML =
+        "The value city exists: " + map.has("City");
     </script>
   </body>
 </html>
@@ -720,11 +720,86 @@
     <p id="demo3"></p>
     <script>
       let maaapp = new Map();
-      map.set("a",1);
+      map.set("a", 1);
       map.delete("a");
-      document.getElementById("demo3").innerHTML = "The deletion is complete & value is "+map.get("a");
+      document.getElementById("demo3").innerHTML =
+        "The deletion is complete & value is " + map.get("a");
     </script>
   </body>
 </html>
 
 
+
+<html>
+  <body>
+    <h1>Convert Object Into Map</h1>
+    <p > Do convert an Object Into Map</p>
+    <p id="demo4"></p>
+    <script>
+      let obj = {
+        name:"Sameer",
+        age:22,
+      }
+      let mapp = new Map(Object.entries(obj));
+      document.getElementById("demo4").innerHTML = "The Ovject is converted into Map  & userName is "+mapp.get("name");
+    </script>
+
+  </body>
+</html> -->
+
+<html>
+  <body>
+    <h1>JavaScript Callbacks</h1>
+    <p>
+      Callbacks are the function which passes inside another functiona as
+      arguemement and then called later
+    </p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+      function greet(name, callback) {
+        document.getElementById("demo").innerHTML = "Hello " + name;
+        callback();
+      }
+      function sayBye() {
+        document.getElementById("demo1").innerHTML = "Bye..!";
+      }
+      greet("Ali", sayBye);
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Callback With Calculation</h1>
+    <p id="demo2"></p>
+    <script>
+      function calculate(a, b, callBack) {
+        let result = a + b;
+        callBack(result);
+      }
+      function display(result) {
+        document.getElementById("demo2").innerHTML = "The result is " + result;
+      }
+      calculate(2, 3, display);
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Anonymous Callback</h1>
+    <p>To use Callback inline (Anonymous Function)</p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+      function greeting(name, callbacckk) {
+        document.getElementById("demo3").innerHTML = "Hello " + name;
+        callbacckk();
+      }
+      greeting("sara", function () {
+        document.getElementById("demo4").innerHTML = "Welcome..!";
+      });
+    </script>
+  </body>
+</html>
