@@ -803,3 +803,22 @@
     </script>
   </body>
 </html>
+
+<html>
+  <body>
+    <h1>setTimeout Callback (Async)</h1>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+
+    <script>
+      document.getElementById("demo5").innerHTML = "Start";
+
+      setTimeout(function () {
+        document.getElementById("demo6").innerHTML = "After 2 seconds";
+      }, 2000);
+
+      document.getElementById("demo7").innerHTML = "End";
+    </script>
+  </body>
+</html>
