@@ -671,7 +671,6 @@
   </body>
 </html> -->
 
-
 <html>
   <body>
     <h1>Map</h1>
@@ -680,10 +679,25 @@
     <p id="demo"></p>
     <script>
       let map = new Map();
-      map.set("Name","Ali");
-      map.set("age",20);
+      map.set("Name", "Ali");
+      map.set("age", 20);
 
-      document.getElementById("demo").innerHTML = "The name is "+map.get("Name")+ " The age is "+map.get("age");
+      document.getElementById("demo").innerHTML =
+        "The name is " + map.get("Name") + " The age is " + map.get("age");
     </script>
+  </body>
+</html>
+
+
+
+<html>
+  <body>
+    <h1>Get values in Map</h1>
+    <p id="demo1"></p>
+    <script>
+      let mymap = new Map();
+      map.set("name","Mansoor");
+      document.getElementById("demo1").innerHTML = "The name is "+map.get("name");
+          </script>
   </body>
 </html>
