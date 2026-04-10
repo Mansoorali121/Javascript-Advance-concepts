@@ -618,11 +618,58 @@
   </body>
 </html> -->
 
+<html>
+  <body>
+    <h1>JavaScript Maps and Set</h1>
+    <p>Set stores unique values ( Do not allow duplicate values)</p>
+    <p id="demo"></p>
+    <script>
+      let Myset = new Set();
+      Myset.add(1);
+      Myset.add(1);
+      Myset.add(2);
+      document.getElementById("demo").innerHTML = "The set is " + [...Myset];
+    </script>
+  </body>
+</html>
 
 <html>
   <body>
-    <h1>JavaScript Maps and Set </h1>
-    <p>Set stores unique values ( Do not allow duplicate values)</p>
-    <p id="demo"> </p>
+    <h1>Remove Duplicate from Array</h1>
+    <p id="demo1"></p>
+    <script>
+      let arr = [1, 2, 3, 4, 4, 5, 6];
+      let unique = [...new Set(arr)];
+      document.getElementById("demo1").innerHTML =
+        "The Duplication is removed : " + unique;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Check values Exists</h1>
+    <p id="demo2"></p>
+    <script>
+      let set = new Set([1, 2, 3]);
+      document.getElementById("demo2").innerHTML =
+        "The set has value 2  " + set.has(2);
+    </script>
+  </body>
+</html>
+
+
+<html>
+  <body>
+    <h1>
+      Delete Values
+    </h1>
+    <p id="demo3"></p>
+    <script>
+      let myset = new Set ([1,2,3]);
+      set.delete(2);
+      let newSet = [...myset];
+      document.getElementById("demo3").innerHTML = "The set is "+newSet;
+    </script>
   </body>
 </html>
