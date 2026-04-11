@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
   <body>
     <h1>Q:1 Spread Array</h1>
     <p id="demo"></p>
@@ -47,13 +47,52 @@
     <p id="demo4"></p>
     <script>
       function sum(a, b, callback) {
-      document.getElementById("demo3").innerHTML = "The sum is " + (a+b);
-      callback();
+        document.getElementById("demo3").innerHTML = "The sum is " + (a + b);
+        callback();
       }
       function result() {
-        document.getElementById("demo4").innerHTML = "The Callback is finished " ;
+        document.getElementById("demo4").innerHTML =
+          "The Callback is finished ";
       }
       sum(2, 3, result);
+    </script>
+  </body>
+</html>
+
+<script>
+  function multiply(a, b, callback) {
+    let result = callback(a, b); // ✅ dono values pass karo
+    document.getElementById("demo5").innerHTML = "The result is " + result;
+  }
+
+  function get(x, y) {
+    return x * y;
+  }
+
+  multiply(2, 3, get);
+</script> -->
+
+<html>
+  <body>
+    <h1>Making Promise</h1>
+    <p id="demo"></p>
+    <script>
+      const promise = new Promise((resolve, reject) => {
+        let num = 11;
+        if (num > 10) {
+          resolve("Number is greater then 10");
+        } else {
+          reject("Number is less than 10");
+        }
+      });
+      promise
+        .then(
+          (res) => 
+            (document.getElementById("demo").innerHTML = "Result " + res),
+        )
+        .catch(
+          (err) => (document.getElementById("demo").innerHTML = "Error " + err),
+        );
     </script>
   </body>
 </html>
