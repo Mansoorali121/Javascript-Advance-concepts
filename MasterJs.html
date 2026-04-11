@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h1>Q:1 Spread Array</h1>
+        <p id="demo"></p>
+        <script>
+            let a = [1,2,3,4,5];
+            let b = [6,7,8,9,10];
+            let merged = [...a,...b];
+            document.getElementById("demo").innerHTML = "The Merged Array is "+merged;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <h1>Remove duplicate using set</h1>
+        <p> The Array is let numbers = [1, 2, 2, 3, 4, 4]</p>
+        <p id="demo1"></p>
+        <script>
+            const array = [1, 2, 2, 3, 4, 4];
+            let array_into_set = [...new Set(array)];
+            document.getElementById("demo1").innerHTML = "Duplication is removed  & array is "+array_into_set; 
+        </script>
+    </body>
+</html>
