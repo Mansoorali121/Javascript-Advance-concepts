@@ -1,25 +1,59 @@
 <html>
-    <body>
-        <h1>Q:1 Spread Array</h1>
-        <p id="demo"></p>
-        <script>
-            let a = [1,2,3,4,5];
-            let b = [6,7,8,9,10];
-            let merged = [...a,...b];
-            document.getElementById("demo").innerHTML = "The Merged Array is "+merged;
-        </script>
-    </body>
+  <body>
+    <h1>Q:1 Spread Array</h1>
+    <p id="demo"></p>
+    <script>
+      let a = [1, 2, 3, 4, 5];
+      let b = [6, 7, 8, 9, 10];
+      let merged = [...a, ...b];
+      document.getElementById("demo").innerHTML =
+        "The Merged Array is " + merged;
+    </script>
+  </body>
 </html>
 
 <html>
-    <body>
-        <h1>Remove duplicate using set</h1>
-        <p> The Array is let numbers = [1, 2, 2, 3, 4, 4]</p>
-        <p id="demo1"></p>
-        <script>
-            const array = [1, 2, 2, 3, 4, 4];
-            let array_into_set = [...new Set(array)];
-            document.getElementById("demo1").innerHTML = "Duplication is removed  & array is "+array_into_set; 
-        </script>
-    </body>
+  <body>
+    <h1>Q:2 emove duplicate using set</h1>
+    <p>The Array is let numbers = [1, 2, 2, 3, 4, 4]</p>
+    <p id="demo1"></p>
+    <script>
+      const array = [1, 2, 2, 3, 4, 4];
+      let array_into_set = [...new Set(array)];
+      document.getElementById("demo1").innerHTML =
+        "Duplication is removed  & array is " + array_into_set;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Q:3 Make Map with values</h1>
+    <p id="demo2"></p>
+    <script>
+      const map = new Map();
+      map.set("name", "Ali");
+      map.set("age", 22);
+      document.getElementById("demo2").innerHTML =
+        "The Name is " + map.get("name") + " " + "The Age is " + map.get("age");
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Question:5 Callback</h1>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+      function sum(a, b, callback) {
+      document.getElementById("demo3").innerHTML = "The sum is " + (a+b);
+      callback();
+      }
+      function result() {
+        document.getElementById("demo4").innerHTML = "The Callback is finished " ;
+      }
+      sum(2, 3, result);
+    </script>
+  </body>
 </html>
