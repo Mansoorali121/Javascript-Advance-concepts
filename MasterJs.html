@@ -140,11 +140,11 @@
     <h3>Without Arrow Function Programm</h3>
     <p id="demo"></p>
     <script>
-      function add(a, b) {
+      function addd(a, b) {
         document.getElementById("demo").innerHTML =
           "The sum of a & b is " + (a + b);
       }
-      add(4, 6);
+      addd(4, 6);
     </script>
   </body>
 </html>
@@ -155,8 +155,22 @@
     <p id="demo1"></p>
     <script>
       const add = (a, b) => a + b;
+
+      const result = add(4, 6);
+      document.getElementById("demo1").innerHTML =
+        "The sum with Arrow Function is " + result;
     </script>
   </body>
 </html>
 
-
+<!-- <html>
+  <body>
+    <h3>Another Example of Arrow Function</h3>
+    <p id="demo2"></p>
+    <script>
+      const names = (person1, person2) =>
+        (document.getElementById("demo2").innerHTML =
+          "Name one is " + person1 + "Name 2 is " + person2);
+    </script>
+  </body>
+</html> -->
