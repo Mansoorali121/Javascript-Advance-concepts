@@ -236,3 +236,24 @@
     </script>
   </body>
 </html>
+
+<html>
+  <body>
+    <h1>Async Await Data Fetch</h1>
+    <p id="demo7"></p>
+    <script>
+      function getData() {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            resolve("Data Loaded");
+          }, 2000);
+        });
+      }
+      async function fetchData() {
+        let data = await getData();
+        document.getElementById("demo7").innerHTML = data;
+      }
+      fetchData();
+    </script>
+  </body>
+</html>
