@@ -171,8 +171,27 @@
       const names = (person1, person2) =>
         "Helll " + person1 + " Hello " + person2;
 
-        const get_names = names("Mansoor","Ahmed");
-        document.getElementById("demo2").innerHTML = get_names;
+      const get_names = names("Mansoor", "Ahmed");
+      document.getElementById("demo2").innerHTML = get_names;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Create New Object</h1>
+    <p id="demo3"></p>
+    <script>
+      const user = {
+        name: "Ali",
+      };
+      const newUser = {
+        ...user,
+        age: 22,
+        class: "B",
+      };
+      document.getElementById("demo3").innerHTML =
+        "The Updated user is " + newUser.name;
     </script>
   </body>
 </html>
