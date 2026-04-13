@@ -338,7 +338,33 @@
           city: "Karachi",
         },
       };
-      document.getElementById("demo5").innerHTML = "The city of user is "+user?.address?.city;
+      document.getElementById("demo5").innerHTML =
+        "The city of user is " + user?.address?.city;
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>Take an object & update it</h1>
+    <p id="demo6"></p>
+    <script>
+      const userr = {
+        name: "Ali",
+        age: 22,
+      };
+      const newUser = {
+        ...userr,
+        age: 30,
+        city: "Lahore",
+      };
+      (document.getElementById("demo6").innerHTML =
+        "The updated user name is  " +
+        newUser.name +
+        " & age is " +
+        newUser.age +
+        " & city is " +
+        newUser.city)
     </script>
   </body>
 </html>
