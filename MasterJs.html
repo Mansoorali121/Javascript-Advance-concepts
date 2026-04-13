@@ -297,3 +297,20 @@
     </script>
   </body>
 </html>
+
+<html>
+  <body>
+    <h1>Find User from given Array whose name is Asad</h1>
+    <p id="demo3"></p>
+    <script>
+      let users = [
+        { id: 1, name: "Mohsin" },
+        { id: 2, name: "Asad" },
+        { id: 3, name: "Mansoor" },
+      ];
+      const finded_user = users.find((uname) => uname.name == "Asad");
+      document.getElementById("demo3").innerHTML =
+        "The user is find " + finded_user.name;
+    </script>
+  </body>
+</html>
