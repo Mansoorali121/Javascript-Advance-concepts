@@ -320,9 +320,25 @@
     <h1>Use set & remove duplication</h1>
     <p id="demo4"></p>
     <script>
-      let arr = [1,2,3,3,4,5];
+      let arr = [1, 2, 3, 3, 4, 5];
       const set = new Set(arr);
-      document.getElementById("demo4").innerHTML = "The set is "+[...set];
+      document.getElementById("demo4").innerHTML = "The set is " + [...set];
+    </script>
+  </body>
+</html>
+
+<html>
+  <body>
+    <h1>use Optional Chaining</h1>
+    <p id="demo5"></p>
+    <script>
+      let user = {
+        name: "Ali",
+        address: {
+          city: "Karachi",
+        },
+      };
+      document.getElementById("demo5").innerHTML = "The city of user is "+user?.address?.city;
     </script>
   </body>
 </html>
