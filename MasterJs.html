@@ -284,3 +284,16 @@
   </body>
 </html>
 
+<html>
+  <body>
+    <h1>Use filter and find odd Numbers</h1>
+    <h3>The numbers = [1,,2,3,4,5];</h3>
+    <p id="demo2"></p>
+    <script>
+      let values = [1, 2, 3, 4, 5];
+      let odd_values = values.filter((num) => num % 2 !== 0);
+      document.getElementById("demo2").innerHTML =
+        "The result is " + odd_values;
+    </script>
+  </body>
+</html>
